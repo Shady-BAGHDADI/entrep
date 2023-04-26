@@ -11,6 +11,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NzCollapseModule } from 'ng-zorro-antd/collapse';
+import { NzSelectModule } from 'ng-zorro-antd/select';
+import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzEmptyModule } from 'ng-zorro-antd/empty';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+
 registerLocaleData(en);
 
 @NgModule({
@@ -22,6 +29,12 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     NzCollapseModule,
+    NzSelectModule,
+    NzCheckboxModule,
+    NzInputModule,
+    NzIconModule,
+    NzEmptyModule,
+    NzButtonModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],

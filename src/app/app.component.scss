@@ -1,13 +1,30 @@
-::ng-deep  nz-collapse > nz-collapse-panel > div.ant-collapse-header.ng-tns-c2-0 > div {
-  
-    border-radius:10px   ;
-   background-color: #a01717;
-    margin-left: auto;
-  
-    }
-    ::ng-deep .ant-collapse>.ant-collapse-item>.ant-collapse-header .ant-collapse-arrow {
-        display: flex !important;
-        //align-items: center !important;
-        justify-content: center !important;
-        margin-right: 0px !important;
-    }
+::ng-deep
+  nz-collapse
+  > nz-collapse-panel
+  > div.ant-collapse-header.ng-tns-c2-0
+  > div {
+  border-radius: 10px;
+  background-color: #a01717;
+  margin-left: auto;
+  float: left;
+}
+
+.ant-collapse-arrow {
+  display: flex !important;
+  //align-items: center !important;
+  justify-content: center !important;
+  margin-right: 0px !important;
+}
+
+::ng-deep .ant-checkbox-input {
+  accent-color: red !important;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(
+    6,
+    1fr
+  ); /* Divides the container into 6 equal-width columns */
+  grid-gap: 10px; /* Adds some spacing between the columns */
+}
