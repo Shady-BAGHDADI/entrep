@@ -1,0 +1,13 @@
+::ng-deep  nz-collapse > nz-collapse-panel > div.ant-collapse-header.ng-tns-c2-0 > div {
+  
+    border-radius:10px   ;
+   background-color: #a01717;
+    margin-left: auto;
+  
+    }
+    ::ng-deep .ant-collapse>.ant-collapse-item>.ant-collapse-header .ant-collapse-arrow {
+        display: flex !important;
+        //align-items: center !important;
+        justify-content: center !important;
+        margin-right: 0px !important;
+    }
