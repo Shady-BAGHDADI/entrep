@@ -23,7 +23,7 @@
 .container {
   display: grid;
   grid-template-columns: repeat(
-    5,
+    6,
     1fr
   ); /* Divides the container into 6 equal-width columns */
   grid-gap: 10px; /* Adds some spacing between the columns */
@@ -55,4 +55,12 @@ nz-pagination {
 }
 .ant-input-affix-wrapper {
   border: none;
+}
+.primary {
+  background-color: #a01717;
+  color: aliceblue;
+  border-color: #a01717;
+}
+.secondary {
+  color: black;
 }
