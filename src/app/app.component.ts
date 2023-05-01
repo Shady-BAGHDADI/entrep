@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostBinding, OnInit } from '@angular/core';
 import {
   UntypedFormBuilder,
   UntypedFormGroup,
@@ -13,6 +13,8 @@ import { ItemData, Setting } from './person.interface';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  @HostBinding('class.no-transition') noTransition = true;
+
   checked = true;
   listOfOption: Array<{ label: string; value: string }> = [];
   size: NzSelectSizeType = 'large';

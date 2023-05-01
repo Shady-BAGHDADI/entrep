@@ -56,3 +56,17 @@ nz-pagination {
 .ant-input-affix-wrapper {
   border: none;
 }
+
+.no-transition .ant-tabs-nav-wrap,
+.no-transition .ant-tabs-tabpane {
+  transition: none !important;
+}
+
+::ng-deep .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  text-decoration: underline !important;
+}
+::ng-deep .ant-tabs-card > .ant-tabs-nav .ant-tabs-tab,
+.ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab {
+  background-color: transparent;
+  border: none;
+}

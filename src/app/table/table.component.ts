@@ -146,7 +146,7 @@ export class TableComponent {
       paginationType: 'default',
       tableScroll: 'unset',
       tableLayout: 'auto',
-      position: 'bottom',
+      position: 'top',
     });
     this.settingValue = this.settingForm.value;
     this.settingForm.valueChanges.subscribe(
