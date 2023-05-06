@@ -1,0 +1,19 @@
+<div style="padding: 20px;">
+
+  <button nz-button [nzSize]="size" nzType="default" *ngFor="let button of buttons; let i = index"
+    (click)="onButtonClick(i)" [ngClass]="selectedButtonIndex === i  ? 'primary' : 'secondary'">
+    {{ button }}</button>
+  <!--   <div *ngIf="loading" style="text-align: center;">
+      <nz-spin nzSize="large"></nz-spin>
+  </div>    -->
+
+  <!-- Contenu du tableau pour le bouton 1 -->
+  <div style="padding: 20px;">
+    <shared-table></shared-table>
+  </div>
+
+
+
+
+
+</div>

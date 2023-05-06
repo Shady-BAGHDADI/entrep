@@ -1,12 +1,20 @@
 <router-outlet></router-outlet>
-<nz-collapse [nzBordered]="false">
-  <nz-collapse-panel [nzHeader]="'Recherche Rapide'" [nzActive]="true">
-    <hr />
-    <!--TODO -->
-    <p>
-      A dog is a type of domesticated animal. Known for its loyalty and
-      faithfulness, it can be found as a welcome guest in many households across
-      the world.
-    </p>
-  </nz-collapse-panel>
-</nz-collapse>
+<app-clients-prospects></app-clients-prospects>
+<div style="padding: 20px;">
+
+
+
+
+
+  <nz-tabset [nzSelectedIndex]="selectedTabIndex" nzType="card">
+    <nz-tab *ngFor="let tab of tabs; let i = index" [nzTitle]="tab">
+      <ng-template nz-tab>
+        <shared-list-buttons></shared-list-buttons>
+      </ng-template>
+    </nz-tab>
+  </nz-tabset>
+
+
+
+
+</div>
