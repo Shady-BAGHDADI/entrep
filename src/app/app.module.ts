@@ -1,58 +1,19 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { NZ_I18N } from 'ng-zorro-antd/i18n';
-import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NzCollapseModule } from 'ng-zorro-antd/collapse';
-import { NzSelectModule } from 'ng-zorro-antd/select';
-import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
-import { NzInputModule } from 'ng-zorro-antd/input';
-import { NzIconModule } from 'ng-zorro-antd/icon';
-import { NzEmptyModule } from 'ng-zorro-antd/empty';
-import { NzButtonModule } from 'ng-zorro-antd/button';
-import { NzTabsModule } from 'ng-zorro-antd/tabs';
-import { NzTableModule } from 'ng-zorro-antd/table';
-import { NzDividerModule } from 'ng-zorro-antd/divider';
-import { NzSpinModule } from 'ng-zorro-antd/spin';
-import { NzRadioModule } from 'ng-zorro-antd/radio';
-import { NzFormModule } from 'ng-zorro-antd/form';
-import { TableComponent } from './table/table.component';
-import { ButtonsComponent } from './buttons/buttons.component';
-import { NzPaginationModule } from 'ng-zorro-antd/pagination';
+import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
+import { AppComponent } from './app.component';
+import { ClientsProspectsComponent } from './modules/clients-prospects/clients-prospects.component';
+import { ClientsProspectsModule } from './modules/clients-prospects/clients-prospects.module';
+import { NgZerroModule } from './ng-zerro.module';
+import { SharedModule } from './shared/shared.module';
 
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [AppComponent, TableComponent, ButtonsComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    NzCollapseModule,
-    NzSelectModule,
-    NzCheckboxModule,
-    NzInputModule,
-    NzIconModule,
-    NzEmptyModule,
-    NzButtonModule,
-    NzTabsModule,
-    NzTableModule,
-    NzDividerModule,
-    NzSpinModule,
-    NzRadioModule,
-    NzFormModule,
-    NzPaginationModule,
-  ],
+  declarations: [AppComponent, ClientsProspectsComponent],
+  imports: [ClientsProspectsModule, NgZerroModule, SharedModule],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],
 })

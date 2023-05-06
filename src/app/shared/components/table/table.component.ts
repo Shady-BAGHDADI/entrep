@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { ItemData, Setting } from '../person.interface';
-import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder } from '@angular/forms';
+import { ItemData, Setting } from 'src/app/person.interface';
 
 @Component({
-  selector: 'app-table',
+  selector: 'shared-table',
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.scss'],
 })

@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { NzSelectSizeType } from 'ng-zorro-antd/select';
 
 @Component({
-  selector: 'app-buttons',
-  templateUrl: './buttons.component.html',
-  styleUrls: ['./buttons.component.scss'],
+  selector: 'shared-list-buttons',
+  templateUrl: './list-buttons.component.html',
+  styleUrls: ['./list-buttons.component.scss'],
 })
-export class ButtonsComponent {
+export class ListButtonsComponent {
   buttons = [
     'Synthétique',
     'Identité',

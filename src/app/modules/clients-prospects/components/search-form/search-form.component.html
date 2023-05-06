@@ -1,0 +1,38 @@
+<nz-collapse [nzBordered]="false">
+  <nz-collapse-panel [nzHeader]="'Recherche Rapide'" [nzActive]="true">
+    <hr />
+    <!--TODO -->
+
+    <ng-template #suffixIconSearch>
+      <span nz-icon nzType="search"></span>
+    </ng-template>
+    <br />
+    <nz-input-group [nzSuffix]="suffixTemplateInfo" [nzPrefix]="prefixTemplateUser">
+      <label>Types de Client/Prospects</label>
+    </nz-input-group>
+    <ng-template #prefixTemplateUser><span nz-icon nzType="user"></span></ng-template>
+    <ng-template #suffixTemplateInfo>
+      <span nz-icon nz-tooltip nzTooltipTitle="Extra information" nzType="info-circle"></span>
+    </ng-template>
+    <br />
+    <br />
+    <div class="container">
+      <div>
+        <label nz-checkbox [(ngModel)]="checked">Clients</label>
+        <label nz-checkbox [(ngModel)]="checked">Tous les prospects</label>
+      </div>
+      <nz-select [(ngModel)]="tagValue" [nzSize]="'large'" nzMode="tags" nzPlaceHolder="Please select">
+
+        <nz-option *ngFor="let option of listOfOption" [nzLabel]="option.label" [nzValue]="option.value"></nz-option>
+      </nz-select>
+      <nz-select [(ngModel)]="tagValue" [nzSize]="'large'" nzMode="tags" nzPlaceHolder="Please select">
+
+        <nz-option *ngFor="let option of listOfOption" [nzLabel]="option.label" [nzValue]="option.value"></nz-option>
+      </nz-select>
+      <input nz-input [nzSize]="'large'" placeholder="Exemple" />
+      <button nz-button [nzSize]="'large'" style="background-color: #0f056b; color:aliceblue">Rechercher</button>
+    </div>
+
+
+  </nz-collapse-panel>
+</nz-collapse>

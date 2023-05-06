@@ -1,11 +1,4 @@
 import { Component, HostBinding, OnInit } from '@angular/core';
-import {
-  UntypedFormBuilder,
-  UntypedFormGroup,
-  FormControl,
-} from '@angular/forms';
-import { NzSelectSizeType } from 'ng-zorro-antd/select';
-import { ItemData, Setting } from './person.interface';
 
 @Component({
   selector: 'app-root',
@@ -15,12 +8,8 @@ import { ItemData, Setting } from './person.interface';
 export class AppComponent implements OnInit {
   @HostBinding('class.no-transition') noTransition = true;
 
-  checked = true;
-  listOfOption: Array<{ label: string; value: string }> = [];
-  size: NzSelectSizeType = 'large';
   singleValue = 'a10';
   multipleValue = ['a10', 'c12'];
-  tagValue = ['a10', 'c12', 'tag'];
   tabs = [
     'Tableau de bord',
     'Connaissance clients',
@@ -46,11 +35,6 @@ export class AppComponent implements OnInit {
   loading: boolean = false;
 
   ngOnInit(): void {
-    const children: Array<{ label: string; value: string }> = [];
-    for (let i = 10; i < 36; i++) {
-      children.push({ label: i.toString(36) + i, value: i.toString(36) + i });
-    }
-    this.listOfOption = children;
     //On Init data table start
   }
   //On Init data  table fin
