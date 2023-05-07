@@ -1,21 +1,34 @@
-<!-- Contenu du tableau pour le bouton 1 -->
-<div style="padding: 20px;">
-  <shared-list-buttons></shared-list-buttons>
-</div>
-<div style="padding: 20px;">
-
-</div>
-<nz-table #dynamicTable [nzScroll]="{ x: scrollX, y: scrollY }" [nzData]="listOfData"
-  [nzTableLayout]="settingValue.tableLayout" [nzBordered]="settingValue.bordered" [nzSimple]="settingValue.simple"
-  [nzLoading]="settingValue.loading" [nzPaginationType]="settingValue.paginationType"
-  [nzPaginationPosition]="settingValue.position" [nzShowSizeChanger]="settingValue.sizeChanger"
-  [nzFrontPagination]="settingValue.pagination" [nzShowPagination]="settingValue.pagination"
-  [nzSize]="settingValue.size" (nzCurrentPageDataChange)="currentPageDataChange($event)">
+<nz-table
+  #dynamicTable
+  [nzScroll]="{ x: scrollX, y: scrollY }"
+  [nzData]="listOfData"
+  [nzTableLayout]="settingValue.tableLayout"
+  [nzBordered]="settingValue.bordered"
+  [nzSimple]="settingValue.simple"
+  [nzLoading]="settingValue.loading"
+  [nzPaginationType]="settingValue.paginationType"
+  [nzPaginationPosition]="settingValue.position"
+  [nzShowSizeChanger]="settingValue.sizeChanger"
+  [nzFrontPagination]="settingValue.pagination"
+  [nzShowPagination]="settingValue.pagination"
+  [nzSize]="settingValue.size"
+  (nzCurrentPageDataChange)="currentPageDataChange($event)"
+>
   <thead>
     <tr *ngIf="settingValue.header">
-      <th nzWidth="40px" *ngIf="settingValue.expandable" [nzLeft]="fixedColumn"></th>
-      <th *ngIf="settingValue.checkbox" nzWidth="60px" [(nzChecked)]="allChecked" [nzLeft]="fixedColumn"
-        [nzIndeterminate]="indeterminate" (nzCheckedChange)="checkAll($event)"></th>
+      <th
+        nzWidth="40px"
+        *ngIf="settingValue.expandable"
+        [nzLeft]="fixedColumn"
+      ></th>
+      <th
+        *ngIf="settingValue.checkbox"
+        nzWidth="60px"
+        [(nzChecked)]="allChecked"
+        [nzLeft]="fixedColumn"
+        [nzIndeterminate]="indeterminate"
+        (nzCheckedChange)="checkAll($event)"
+      ></th>
       <th [nzLeft]="fixedColumn">Name</th>
       <th>Age</th>
       <th>Address</th>
@@ -25,9 +38,17 @@
   <tbody>
     <ng-container *ngFor="let data of dynamicTable.data">
       <tr>
-        <td [nzLeft]="fixedColumn" *ngIf="settingValue.expandable" [(nzExpand)]="data.expand"></td>
-        <td [nzLeft]="fixedColumn" *ngIf="settingValue.checkbox" [(nzChecked)]="data.checked"
-          (nzCheckedChange)="refreshStatus()"></td>
+        <td
+          [nzLeft]="fixedColumn"
+          *ngIf="settingValue.expandable"
+          [(nzExpand)]="data.expand"
+        ></td>
+        <td
+          [nzLeft]="fixedColumn"
+          *ngIf="settingValue.checkbox"
+          [(nzChecked)]="data.checked"
+          (nzCheckedChange)="refreshStatus()"
+        ></td>
         <td [nzLeft]="fixedColumn">{{ data.name }}</td>
         <td>{{ data.age }}</td>
         <td [nzEllipsis]="settingValue.ellipsis">{{ data.address }}</td>

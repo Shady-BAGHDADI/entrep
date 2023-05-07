@@ -1,2 +1,12 @@
 <app-search-form></app-search-form>
-<shared-list-buttons></shared-list-buttons>
+
+<nz-tabset [nzSelectedIndex]="selectedTabIndex" nzType="card">
+  <nz-tab *ngFor="let tab of tabs; let i = index" [nzTitle]="tab">
+    <ng-template nz-tab>
+      <shared-list-buttons></shared-list-buttons>
+    </ng-template>
+  </nz-tab>
+</nz-tabset>
+<div style="padding: 20px">
+  <shared-table></shared-table>
+</div>

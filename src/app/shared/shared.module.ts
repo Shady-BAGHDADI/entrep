@@ -16,11 +16,12 @@ const sharedModules = [
   ReactiveFormsModule,
   HttpClientModule,
   BrowserAnimationsModule,
+  NgZerroModule,
 ];
 const sharedComponents = [ListButtonsComponent, TableComponent];
 @NgModule({
   declarations: [...sharedComponents],
-  imports: [...sharedModules, NgZerroModule],
+  imports: [...sharedModules],
   exports: [...sharedModules, ...sharedComponents],
 })
 export class SharedModule {}
