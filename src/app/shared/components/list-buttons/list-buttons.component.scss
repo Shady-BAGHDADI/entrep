@@ -1,66 +1,44 @@
-::ng-deep
-  nz-collapse
-  > nz-collapse-panel
-  > div.ant-collapse-header.ng-tns-c2-0
-  > div {
-  border-radius: 10px;
-  background-color: #a01717;
-  margin-left: auto;
-  float: left;
+//Global Proporties
+:root {
+  --border-radius: 4px;
+  --color-dark: #000;
+  --color-white: #fff;
+  --height: 4rem;
+}
+.btn-btn {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  border: 1px solid #d8d;
+  color: var(--color-dark);
+  cursor: pointer;
+  font-weight: bold;
+  height: var(--height);
+  margin-right: 10px;
+  width: 10%;
+  display: inline-block;
+}
+.btn-btn.active {
+  background: #a1176c;
+  border-radius: var(--border-radius);
+  color: var(--color-white);
 }
 
-.ant-collapse-arrow {
-  display: flex !important;
-  //align-items: center !important;
-  justify-content: center !important;
-  margin-right: 0px !important;
+@media screen and (max-width: 1030px) {
+  .btn-btn {
+    width: 30%;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
-
-::ng-deep .ant-checkbox-input {
-  accent-color: red !important;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(
-    6,
-    1fr
-  ); /* Divides the container into 6 equal-width columns */
-  grid-gap: 10px; /* Adds some spacing between the columns */
-}
-[nz-button] {
-  margin-right: 8px;
-}
-.ant-btn:focus,
-.ant-btn:hover {
-  background-color: #a01717;
-  color: aliceblue;
-  border-color: #a01717;
-}
-form nz-form-item {
-  margin-right: 16px;
-  margin-bottom: 8px;
-}
-nz-pagination {
-  display: flex;
-  align-items: flex-start;
-}
-.ant-table-pagination.ant-pagination {
-  display: flex;
-  align-items: flex-start;
-}
-.ant-table-pagination-right {
-  display: flex;
-  align-items: flex-start !important;
-}
-.ant-input-affix-wrapper {
-  border: none;
-}
-.primary {
-  background-color: #a01717;
-  color: aliceblue;
-  border-color: #a01717;
-}
-.secondary {
-  color: black;
+@media screen and (max-width: 300px) {
+  .btn-btn {
+    width: 30%;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    //long text add ...
+    text-overflow: ellipsis;
+  }
 }

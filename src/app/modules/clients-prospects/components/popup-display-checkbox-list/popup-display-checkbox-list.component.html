@@ -1,0 +1,31 @@
+<div class="popup">
+  <div class="header">
+    <h1>{{popupHeadersText}}</h1>
+    <p>Personalisez vos colonnes</p>
+  </div>
+
+
+  <div class="container-checkbox-list">
+    <div class="container-checkbox" *ngFor="let d of listOfCheckBox">
+      <input type="checkbox" [checked]="d.checked" (change)="change(d)">
+      <strong>{{d.name}}</strong>
+
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+  <div class="container-message">
+    <div [style.color]="condition ? 'red':'black' ">{{lengthSelected}} colonnes principales selectionnées,8 max </div>
+
+    <div class="container-favourite">
+      <span nz-icon nzType="star" nzTheme="outline">
+
+      </span>
+      <div>Garder en favori</div>
+    </div>
+    <div class="footer">
+      <button class="button-cancel" (click)="close()">Annuler</button>
+      <button class="button-confirm btn-disabled" (click)="add()">Confirmer</button>
+    </div>
+
+
+  </div>
