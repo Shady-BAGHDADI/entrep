@@ -3,7 +3,8 @@
 
 
 <div class="icon" (click)="openModalOfCheckBoxList()">
-  <span nz-icon [nzType]="'setting'" [nzTheme]="'fill'" style="margin-right: 6px"></span>Personaliser la vue
+  <span style=" display: inline-block;background: #6a6d66 !important;" nz-icon [nzType]="'setting'" [nzTheme]="'fill'"
+    style="margin-right: 6px"></span>Personaliser la vue
 </div>
 
 
@@ -13,22 +14,25 @@
 <nz-table>
   <thead>
     <tr>
-      <th nzWidth="40px" *ngFor="let header of headersForView" style="position:relative">
+      <th nzWidth="40px" *ngFor="let header of headersForView" style="position:relative" class="sortable">
 
-        <div style="display: flex;flex-direction: row;">
+        <div class="sort-label">
           <div>
             <strong>{{header.name}}</strong>
           </div>
           <div *ngIf="header.canBeSort " style="margin-left:10px;margin-top:-4px;line-height: 15px;">
-            <div>
-              <span nz-icon nzType="caret-up" nzTheme="outline">
+            <div class="icon-container ">
 
-              </span>
-            </div>
-            <div>
-              <span nz-icon nzType="caret-down" nzTheme="outline">
+              <div class="icon-sort-up">
+                <span nz-icon nzType="caret-up" nzTheme="outline">
 
-              </span>
+                </span>
+              </div>
+              <div class="icon-sort-down ">
+                <span nz-icon nzType="caret-down" nzTheme="outline">
+
+                </span>
+              </div>
             </div>
 
 

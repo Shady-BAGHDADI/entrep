@@ -18,9 +18,10 @@
   margin-left: 60px;
 
   .container-checkbox {
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: row;
+    margin-top: 8px;
 
     strong {
       line-height: 21px;
@@ -29,6 +30,10 @@
   }
   div > input[type="checkbox"] {
     accent-color: #a1176c !important;
+
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
   }
 }
 

@@ -7,32 +7,27 @@
       <span nz-icon nzType="search"></span>
     </ng-template>
     <br />
-    <nz-input-group [nzSuffix]="suffixTemplateInfo" [nzPrefix]="prefixTemplateUser">
+    <form [formGroup]="crmForm" (ngSubmit)="onSubmit()">
       <label>Types de Client/Prospects</label>
-    </nz-input-group>
-    <ng-template #prefixTemplateUser><span nz-icon nzType="user"></span></ng-template>
-    <ng-template #suffixTemplateInfo>
-      <span nz-icon nz-tooltip nzTooltipTitle="Extra information" nzType="info-circle"></span>
-    </ng-template>
-    <br />
-    <br />
-    <div class="container">
-      <div>
-        <label nz-checkbox [(ngModel)]="checked">Clients</label>
-        <label nz-checkbox [(ngModel)]="checked">Tous les prospects</label>
+      <ng-template #prefixTemplateUser><span nz-icon nzType="user"></span></ng-template>
+      <ng-template #suffixTemplateInfo>
+        <span nz-icon nz-tooltip nzTooltipTitle="Extra information" nzType="info-circle"></span>
+      </ng-template>
+      <br />
+      <br />
+      <div class="container">
+        <div>
+          <span *ngIf="errorMessage" class="custom-error-message">errorMessage </span>
+
+          <label nz-checkbox formControlName="isClient" nzStatus="error">Clients</label>
+          <label nz-checkbox formControlName="isProspect" nzDanger="error">Tous les prospects</label>
+        </div>
+
+        <input nz-input [nzSize]="'large'" formControlName="text" placeholder="Exemple" />
+        <button nz-button [nzSize]="'large'" style="background-color: #52617b; color:aliceblue"
+          type="submit">Rechercher</button>
       </div>
-      <nz-select [(ngModel)]="tagValue" [nzSize]="'large'" nzMode="tags" nzPlaceHolder="Please select">
-
-        <nz-option *ngFor="let option of listOfOption" [nzLabel]="option.label" [nzValue]="option.value"></nz-option>
-      </nz-select>
-      <nz-select [(ngModel)]="tagValue" [nzSize]="'large'" nzMode="tags" nzPlaceHolder="Please select">
-
-        <nz-option *ngFor="let option of listOfOption" [nzLabel]="option.label" [nzValue]="option.value"></nz-option>
-      </nz-select>
-      <input nz-input [nzSize]="'large'" placeholder="Exemple" />
-      <button nz-button [nzSize]="'large'" style="background-color: #52617b; color:aliceblue">Rechercher</button>
-    </div>
-
+    </form>
 
   </nz-collapse-panel>
 </nz-collapse>

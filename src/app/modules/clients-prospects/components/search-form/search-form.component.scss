@@ -23,7 +23,7 @@
 .container {
   display: grid;
   grid-template-columns: repeat(
-    5,
+    3,
     1fr
   ); /* Divides the container into 6 equal-width columns */
   grid-gap: 10px; /* Adds some spacing between the columns */
@@ -68,4 +68,9 @@ nz-pagination {
 .ant-tabs-card > div > .ant-tabs-nav .ant-tabs-tab {
   background-color: transparent;
   border: none;
+}
+.custom-error-message {
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
 }

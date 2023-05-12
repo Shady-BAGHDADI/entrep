@@ -20,6 +20,7 @@ export class PopupDisplayCheckboxListComponent implements OnInit {
   ngOnInit() {
     this.getListOfCheckbox();
     this.popupHeadersText = this.crmService.popUpHeadersText;
+    //this.updateHeightPopup();
   }
   isVisible = false;
   isConfirmLoading = false;
@@ -52,4 +53,22 @@ export class PopupDisplayCheckboxListComponent implements OnInit {
   close(): void {
     this.modalService.closeAll();
   }
+
+  // height = '0px';
+  // updateHeightPopup() {
+  //   const typeOfPopup = this.crmService.popUpHeadersText;
+  //   i can use global var in service and test on type of button not label
+
+  //   switch (typeOfPopup) {
+  //     case 'Synthétique':
+  //       this.height = '400px';
+  //       break;
+  //     case 'Identité':
+  //       this.height = '200px';
+  //       break;
+  //     default:
+  //       this.height = '500px';
+  //       break;
+  //   }
+  // }
 }

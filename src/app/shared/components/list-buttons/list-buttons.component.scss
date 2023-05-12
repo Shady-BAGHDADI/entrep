@@ -1,6 +1,6 @@
 //Global Proporties
-:root {
-  --border-radius: 4px;
+:host {
+  --border-radius: 15px;
   --color-dark: #000;
   --color-white: #fff;
   --height: 4rem;
@@ -14,12 +14,13 @@
   font-weight: bold;
   height: var(--height);
   margin-right: 10px;
-  width: 10%;
+  width: 13%;
   display: inline-block;
 }
 .btn-btn.active {
   background: #a1176c;
   border-radius: var(--border-radius);
+
   color: var(--color-white);
 }
 
