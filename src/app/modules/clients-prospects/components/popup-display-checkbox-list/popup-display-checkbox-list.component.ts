@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NzModalService } from 'ng-zorro-antd/modal';
-import { IHeader } from 'src/app/shared/models/header';
-import { CrmService } from 'src/app/shared/services/crm.service';
+import { IHeader } from 'shared/models/header';
+import { CrmService } from 'shared/services/crm.service';
 
 @Component({
   selector: 'app-popup-display-checkbox-list',
@@ -54,21 +54,56 @@ export class PopupDisplayCheckboxListComponent implements OnInit {
     this.modalService.closeAll();
   }
 
-  // height = '0px';
-  // updateHeightPopup() {
-  //   const typeOfPopup = this.crmService.popUpHeadersText;
-  //   i can use global var in service and test on type of button not label
+  //if i check Relation commerciale Siren devient unchecked and the else of that
 
-  //   switch (typeOfPopup) {
-  //     case 'Synthétique':
-  //       this.height = '400px';
-  //       break;
-  //     case 'Identité':
-  //       this.height = '200px';
-  //       break;
-  //     default:
-  //       this.height = '500px';
-  //       break;
-  //   }
-  // }
+  /*    <input type="checkbox" [checked]="d.checked || d.id==='strategierelationnelle'" (change)="change(d)"
+  [disabled]="setDisabled(d)">
+  */
+
+  /*
+  setDisabled(column: IHeader) {
+    let relationCommerciale = this.listOfCheckBox.find((rc) => {
+      return rc.id === 'groupecommercial';
+    });
+    let representantlegal = this.listOfCheckBox.find((rc) => {
+      return rc.id === 'representantlegal';
+    });
+    // il faut selectionner au minumum deux colone (checked + disabled)
+    //j'ai fait le checked de strategierelationnelle de html avec proprietes binding [checked]
+    if (column.id === 'siren' || column.id === 'strategierelationnelle') {
+      return true;
+    }
+    //si l'une est check" l'autre uncheck
+    if (
+      (column.id === relationCommerciale?.id && representantlegal?.checked) ||
+      (column.id === representantlegal?.id && relationCommerciale?.checked)
+    ) {
+      return true;
+    }
+    return false;
+  } */
+
+  //x=2 //afectation : danx x il y a 2
+  //x==2 // comparaison :est ce que x egale à 2 ?
+  //x===2//comparaison :est ce que x egale à 2 ? et type de x est un nombre comme type de 2
+
+  /*
+  height = '0px';
+  updateHeightPopup() {
+    const typeOfPopup = this.crmService.popUpHeadersText;
+    i can use global var in service and test on type of button not label
+
+    switch (typeOfPopup) {
+      case 'Synthétique':
+        this.height = '400px';
+        break;
+      case 'Identité':
+        this.height = '200px';
+        break;
+      default:
+        this.height = '500px';
+        break;
+    }
+  }
+  */
 }

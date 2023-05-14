@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { NzSelectSizeType } from 'ng-zorro-antd/select';
+import { IResultSearch } from 'shared/models/resultsearch';
+import { CrmService } from 'shared/services/crm.service';
 
 @Component({
   selector: 'app-search-form',
@@ -16,33 +18,58 @@ export class SearchFormComponent implements OnInit {
   /**
    *
    */
-  constructor(private fb: FormBuilder) {}
+  constructor(
+    private fb: FormBuilder,
+    private readonly crmService: CrmService
+  ) {}
   ngOnInit(): void {
     this.initCrmForm();
   }
   initCrmForm() {
     this.crmForm = this.fb.group({
       text: '',
-      isClient: false,
+      isClient: true,
       isProspect: false,
     });
   }
-  errorMessage = false;
   onSubmit() {
+    console.log(this.crmForm.valid);
+
+    //select au minimum un client ou un prospect
+    this.requiredOneTypeClient();
+
+    //prepartion d un nouveau shape of crm form => newFormShapCRM
+
+    const newFormShapCRM = this.changeShapeCrmForm();
+
+    console.log('CALL API', newFormShapCRM);
+
+    //post(newFormShapCRM)
+    // Service.method(newFormShapCRM).......
+    this.crmService
+      .sendSearchCrmForm(newFormShapCRM)
+      .subscribe((resultSearch: IResultSearch) => {
+        console.log(resultSearch);
+        this.crmService.resultSearch(resultSearch);
+      });
+  }
+
+  errorMessage = false;
+  requiredOneTypeClient() {
     if (
       !this.crmForm.get('isClient')?.value &&
       !this.crmForm.get('isProspect')?.value
     ) {
       this.errorMessage = true;
-      console.log(this.crmForm.value);
     } else {
       this.errorMessage = false;
     }
+  }
 
-    //like iwant
-
-    //prepartion d un nouveau shape of form {} => newFormShapCRM
+  changeShapeCrmForm() {
     let newFormShapCRM: any = {
+      skipFrom: 0,
+      skipCount: 10,
       text: this.crmForm.get('text')?.value,
       data: [
         {
@@ -66,9 +93,6 @@ export class SearchFormComponent implements OnInit {
       newFormShapCRM.data[0].value = '';
     }
 
-    (newFormShapCRM.skipFrom = 0),
-      (newFormShapCRM.skipCount = 10),
-      console.log('newFormShapCRM', newFormShapCRM);
-    //post(newFormShapCRM)
+    return newFormShapCRM;
   }
 }

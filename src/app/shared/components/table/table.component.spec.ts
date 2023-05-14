@@ -47,14 +47,14 @@ describe('TableComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  fit('should display headers for view', () => {
+  it('should display headers for view', () => {
     // Vérifier que headersForView est initialisé avec les headers filtrés
     component.displayHeadersForView();
     expect(component.headersForView.length).toBe(2);
     expect(component.headersForView[0].name).toBe('Header 1');
     expect(component.headersForView[1].name).toBe('Header 3');
   });
-  fit('should get checked headers and assign them to headersForView', () => {
+  it('should get checked headers and assign them to headersForView', () => {
     const mockHeaders: IHeader[] = [
       { id: '1', name: 'Header1', checked: true, canBeSort: true },
       { id: '2', name: 'Header2', checked: false },
@@ -70,7 +70,7 @@ describe('TableComponent', () => {
     ]);
   });
 
-  fit('should open modal when openModalOfCheckBoxList() is called', () => {
+  it('should open modal when openModalOfCheckBoxList() is called', () => {
     component.openModalOfCheckBoxList();
 
     expect(mockNzModalService.create).toHaveBeenCalled();

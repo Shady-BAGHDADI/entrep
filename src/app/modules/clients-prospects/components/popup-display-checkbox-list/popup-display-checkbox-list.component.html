@@ -8,9 +8,8 @@
 
   <div class="container-checkbox-list">
     <div class="container-checkbox" *ngFor="let d of listOfCheckBox">
-      <input type="checkbox" [checked]="d.checked" (change)="change(d)">
+      <input type="checkbox" [checked]="d.checked " (change)="change(d)">
       <strong>{{d.name}}</strong>
-
     </div>
     <div style="clear: both;"></div>
   </div>
