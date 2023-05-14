@@ -1,6 +1,6 @@
 <app-search-form></app-search-form>
 
-<nz-tabset [nzSelectedIndex]="selectedTabIndex" nzType="card">
+<nz-tabset [nzSelectedIndex]="selectedTabIndex" nzType="card" style="margin-top: 20px;">
   <nz-tab *ngFor="let tab of tabs; let i = index" [nzTitle]="tab">
     <ng-template nz-tab>
       <shared-list-buttons></shared-list-buttons>

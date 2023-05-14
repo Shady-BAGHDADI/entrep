@@ -14,6 +14,18 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzSpinModule } from 'ng-zorro-antd/spin';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
+import { IconDefinition } from '@ant-design/icons-angular';
+import { NzModalModule } from 'ng-zorro-antd/modal';
+
+// Import what you need. RECOMMENDED. ✔️
+import {
+  AccountBookFill,
+  AlertFill,
+  AlertOutline,
+} from '@ant-design/icons-angular/icons';
+
+const icons: IconDefinition[] = [AccountBookFill, AlertOutline, AlertFill];
+
 const ngzerroModules = [
   NzCollapseModule,
   NzSelectModule,
@@ -29,10 +41,11 @@ const ngzerroModules = [
   NzRadioModule,
   NzFormModule,
   NzPaginationModule,
+  NzModalModule,
 ];
 @NgModule({
   declarations: [],
-  imports: [CommonModule],
+  imports: [CommonModule, NzIconModule.forRoot(icons)],
   exports: [...ngzerroModules],
 })
 export class NgZerroModule {}

@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { NzSelectSizeType } from 'ng-zorro-antd/select';
+import { SharedConstants } from '../../constants';
+import { CrmService } from '../../services/crm.service';
+import { IButton } from '../../models/button';
+import { IHeader } from '../../models/header';
 
 @Component({
   selector: 'shared-list-buttons',
@@ -7,39 +11,36 @@ import { NzSelectSizeType } from 'ng-zorro-antd/select';
   styleUrls: ['./list-buttons.component.scss'],
 })
 export class ListButtonsComponent {
-  buttons = [
-    'Synthétique',
-    'Identité',
-    'Commercial',
-    'Risque',
-    'Financier',
-    'Equipement',
+  buttons: IButton[] = [
+    { label: 'Synthétique', type: 'synthetique' },
+    { label: 'Identité', type: 'identite' },
+    { label: 'Commercial', type: 'commercial' },
+
+    { label: 'Risque', type: 'risque' },
+
+    { label: 'Financier', type: 'financier' },
+
+    { label: 'Equipement', type: 'equipement' },
   ];
-  selectedButtonIndex: number = 0;
-  table1Visible: boolean = false;
-  table2Visible: boolean = false;
-  table3Visible: boolean = false;
-  loading: boolean = false;
-  selectedTabIndex: number = 1;
-  showButtons: boolean = false;
   size: NzSelectSizeType = 'large';
 
-  onTabClick() {
-    this.selectedTabIndex = 1; // Mettre à jour l'index du tab sélectionné
-    this.showButtons = true; // Afficher les boutons
-  }
-
-  onButtonClick(buttonIndex: number): void {
-    this.selectedButtonIndex = buttonIndex;
-    this.loading = true;
-
-    setTimeout(() => {
-      this.loading = false;
-    }, 2000);
-    // Mettez à jour la visibilité des tableaux
-    this.table1Visible = buttonIndex === 0;
-    this.table2Visible = buttonIndex === 1;
-    this.table3Visible = buttonIndex === 2;
-    // ... mettez à jour la visibilité des autres tableaux en fonction de l'index
+  constructor(private readonly crmService: CrmService) {}
+  activeButton = 'synthetique';
+  setActiveButton(button: IButton) {
+    this.activeButton = button.type;
+    this.crmService.popUpHeadersText = button.label;
+    let headers: IHeader[];
+    switch (this.activeButton) {
+      case 'synthetique':
+        headers = SharedConstants.initHeadersSynthetique;
+        break;
+      case 'identite':
+        headers = SharedConstants.initHeadersIdentite;
+        break;
+      default:
+        headers = SharedConstants.initHeadersSynthetique;
+        break;
+    }
+    this.crmService.updateCheckBoxModal(headers);
   }
 }
