@@ -1,0 +1,10 @@
+<div *ngIf="showBanner" class="container-legend" [style.width]="widthLegend">
+  <div *ngFor="let legend of listOfLegends">
+    <div [ngClass]="legend.color ? 'legend-elt-color' : 'legend-elt'"
+      [ngStyle]="{'border-left': '4px solid' + legend.color}">{{legend.text}}</div>
+  </div>
+  <div>
+
+    <span nz-icon nzType="close-circle" nzTheme="outline" (click)="close()" style="cursor: pointer"></span>
+  </div>
+</div>

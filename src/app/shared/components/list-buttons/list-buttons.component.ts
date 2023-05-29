@@ -28,7 +28,10 @@ export class ListButtonsComponent {
   activeButton = 'synthetique';
   setActiveButton(button: IButton) {
     this.activeButton = button.type;
+    this.crmService.buttonActiveType = button.type;
     this.crmService.popUpHeadersText = button.label;
+    console.warn('button.type;', button.type);
+
     let headers: IHeader[];
     switch (this.activeButton) {
       case 'synthetique':
@@ -36,6 +39,9 @@ export class ListButtonsComponent {
         break;
       case 'identite':
         headers = SharedConstants.initHeadersIdentite;
+        break;
+      case 'commercial':
+        headers = SharedConstants.initHeadersCommercial;
         break;
       default:
         headers = SharedConstants.initHeadersSynthetique;

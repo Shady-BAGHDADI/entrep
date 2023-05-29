@@ -8,6 +8,8 @@ import { AppRoutingModule } from '../app-routing.module';
 import { ListButtonsComponent } from './components/list-buttons/list-buttons.component';
 import { TableComponent } from './components/table/table.component';
 import { NgZerroModule } from '../ng-zerro.module';
+import { LegendComponent } from './components/legend/legend.component';
+import { LegendBannerComponent } from './components/legend-banner/legend-banner.component';
 const sharedModules = [
   CommonModule,
   BrowserModule,
@@ -18,7 +20,12 @@ const sharedModules = [
   BrowserAnimationsModule,
   NgZerroModule,
 ];
-const sharedComponents = [ListButtonsComponent, TableComponent];
+const sharedComponents = [
+  ListButtonsComponent,
+  TableComponent,
+  LegendComponent,
+  LegendBannerComponent,
+];
 @NgModule({
   declarations: [...sharedComponents],
   imports: [...sharedModules],

@@ -33,23 +33,19 @@ export class SearchFormComponent implements OnInit {
     });
   }
   onSubmit() {
-    console.log(this.crmForm.valid);
-
     //select au minimum un client ou un prospect
     this.requiredOneTypeClient();
 
     //prepartion d un nouveau shape of crm form => newFormShapCRM
 
     const newFormShapCRM = this.changeShapeCrmForm();
-
-    console.log('CALL API', newFormShapCRM);
-
+    //i store the form bcz i need it in the table to paginate
+    this.crmService.storeForm(newFormShapCRM);
     //post(newFormShapCRM)
     // Service.method(newFormShapCRM).......
     this.crmService
       .sendSearchCrmForm(newFormShapCRM)
       .subscribe((resultSearch: IResultSearch) => {
-        console.log(resultSearch);
         this.crmService.resultSearch(resultSearch);
       });
   }
