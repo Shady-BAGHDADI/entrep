@@ -1,0 +1,1814 @@
+{
+  "success": true,
+  "totalCount": 23,
+  "pageCount": 2,
+  "currentPage": 1,
+  "data": {
+    "values": [
+      {
+        "columns": [
+          {
+            "name": "representantlegal",
+            "value": "Oui"
+          },
+          {
+            "name": "representantlegalfonction",
+            "value": "PDG"
+          },
+          {
+            "name": "representantlegalprenom",
+            "value": "NOPSEITE"
+          },
+          {
+            "name": "principalinterlocuteuremail",
+            "value": "cm@hotml.fr"
+          },
+          {
+            "name": "daterevisionkyc",
+            "value": "2024-01-25 00:00:00"
+          },
+          {
+            "name": "libellegrouperisque",
+            "value": "Groupe risque TUOXO "
+          },
+          {
+            "name": "raisonsociale",
+            "value": "S.A. PEOSYS"
+          },
+          {
+            "name": "typeclient",
+            "value": "C"
+          },
+          {
+            "name": "fonctionagentgestionnaireportefeuille",
+            "value": "Chargé d'affaires Assistant"
+          },
+          {
+            "name": "nombresalarie",
+            "value": "1000"
+          },
+          {
+            "name": "representantlegalnom",
+            "value": "PIEHAAD "
+          },
+          {
+            "name": "codemarche",
+            "value": "4"
+          },
+          {
+            "name": "derniercri",
+            "value": "2022-03-25 00:00:00"
+          },
+          {
+            "name": "principalinterlocuteurfonction",
+            "value": "Comptable"
+          },
+          {
+            "name": "prenomagentgestionnaireportefeuille",
+            "value": " VERONIQUE"
+          },
+          {
+            "name": "version",
+            "value": "1.0"
+          },
+          {
+            "name": "tophorschamp",
+            "value": "Non"
+          },
+          {
+            "name": "principalinterlocuteurtelephone",
+            "value": "606060606"
+          },
+          {
+            "name": "strategierelationnelle",
+            "value": "Risqué"
+          },
+          {
+            "name": "datenotationrisque",
+            "value": "2022-01-01 00:00:00"
+          },
+          {
+            "name": "commune",
+            "value": "RILLIEUX LA PAPE"
+          },
+          {
+            "name": "datemajstrategiecommercial",
+            "value": "2022-02-02"
+          },
+          {
+            "name": "groupecommercial",
+            "value": "Groupe PEOSYS"
+          },
+          {
+            "name": "agencegestionaire",
+            "value": "Oyonnax Entreprises"
+          },
+          {
+            "name": "extractsperpartname",
+            "value": "\n\n4\n\n$\n\nOyonnax Entreprises\n\n$\n\n1944\n\n$\n\nRODIER\n\n$\n\nS.A. PEOSYS\n\n$\n\nC\n\n$\n\nGroupe risque TUOXO\n\n$\n\nGroupe PEOSYS\n\n$\n\nNon\n\n$\n\nNon\n\n$\n\nNon\n\n$\n\n-\n\n$\n\nRisqué\n\n$\n\nOui\n\n$\n\nPIEHAAD\n\n$\n\nNOPSEITE\n\n$\n\nC5-\n\n$\n\n01/01/2022\n\n$\n\nC5-\n\n$\n\n01/01/2022\n\n$\n\n4751Z - COM.DETA.TEXTILES\n\n$\n\n2223Z - FA.ELT/MAT.PLST/CSTR\n\n$\n\n71 968 K€\n\n$\n\n01/12/2009\n\n$\n\n300379450\n\n$\n\n69140\n\n$\n\nRILLIEUX LA PAPE\n\n$\n\nFrance\n\n$\n\nCARON\n\n$\n\nManu\n\n$\n\n791\n\n$ "
+          },
+          {
+            "name": "ancienclient",
+            "value": "Non"
+          },
+          {
+            "name": "notationrisque",
+            "value": "C5-"
+          },
+          {
+            "name": "motifhorschamp",
+            "value": "-"
+          },
+          {
+            "name": "fileext",
+            "value": "csv"
+          },
+          {
+            "name": "representantlegalclientprospect",
+            "value": "C"
+          },
+          {
+            "name": "formejuridique",
+            "value": "SA"
+          },
+          {
+            "name": "marcheintitule",
+            "value": "Entreprises"
+          },
+          {
+            "name": "leadergroupecommercial",
+            "value": "Non"
+          },
+          {
+            "name": "siren",
+            "value": "300379450"
+          },
+          {
+            "name": "datequotationbdf",
+            "value": "2022-01-01 00:00:00"
+          },
+          {
+            "name": "quotationbdf",
+            "value": "C5-"
+          },
+          {
+            "name": "pays",
+            "value": "France"
+          },
+          {
+            "name": "principalinterlocuteurprenom",
+            "value": "Manu"
+          },
+          {
+            "name": "eds",
+            "value": "791"
+          },
+          {
+            "name": "adressesiegesociale",
+            "value": "Rue du Pape"
+          },
+          {
+            "name": "integremasse",
+            "value": "Non"
+          },
+          {
+            "name": "codepostal",
+            "value": "69140"
+          },
+          {
+            "name": "principalinterlocuteur",
+            "value": "Oui"
+          },
+          {
+            "name": "nafinterne",
+            "value": " 4751Z - COM.DETA.TEXTILES"
+          },
+          {
+            "name": "principalinterlocuteurnom",
+            "value": "CARON"
+          },
+          {
+            "name": "datebilan",
+            "value": "2009-12-01"
+          },
+          {
+            "name": "chiffreaffaire",
+            "value": "71"
+          },
+          {
+            "name": "numeroportefeuille",
+            "value": "1944"
+          },
+          {
+            "name": "naf2",
+            "value": "2223Z - FA.ELT/MAT.PLST/CSTR"
+          },
+          {
+            "name": "nomagentgestionnaireportefeuille",
+            "value": "RODIER"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "name": "representantlegal",
+            "value": "Oui"
+          },
+          {
+            "name": "representantlegalfonction",
+            "value": "PDG"
+          },
+          {
+            "name": "representantlegalprenom",
+            "value": "NOPSEITE"
+          },
+          {
+            "name": "principalinterlocuteuremail",
+            "value": "ode@PME.dom"
+          },
+          {
+            "name": "daterevisionkyc",
+            "value": "2024-01-25 00:00:00"
+          },
+          {
+            "name": "libellegrouperisque",
+            "value": "GROUPE PME"
+          },
+          {
+            "name": "raisonsociale",
+            "value": "S.A. PME FOUR"
+          },
+          {
+            "name": "typeclient",
+            "value": "C"
+          },
+          {
+            "name": "fonctionagentgestionnaireportefeuille",
+            "value": "Chargé d'affaires Assistant"
+          },
+          {
+            "name": "nombresalarie",
+            "value": "1000"
+          },
+          {
+            "name": "representantlegalnom",
+            "value": "PIEHAAD "
+          },
+          {
+            "name": "codemarche",
+            "value": "4"
+          },
+          {
+            "name": "derniercri",
+            "value": "2022-03-25 00:00:00"
+          },
+          {
+            "name": "principalinterlocuteurfonction",
+            "value": "Comptable"
+          },
+          {
+            "name": "prenomagentgestionnaireportefeuille",
+            "value": " VERONIQUE"
+          },
+          {
+            "name": "version",
+            "value": "1.0"
+          },
+          {
+            "name": "tophorschamp",
+            "value": "Non"
+          },
+          {
+            "name": "principalinterlocuteurtelephone",
+            "value": "7777777777"
+          },
+          {
+            "name": "strategierelationnelle",
+            "value": "Inconnue"
+          },
+          {
+            "name": "datenotationrisque",
+            "value": "2022-01-01 00:00:00"
+          },
+          {
+            "name": "commune",
+            "value": "RILLIEUX LA PAPE"
+          },
+          {
+            "name": "datemajstrategiecommercial",
+            "value": "2022-02-02"
+          },
+          {
+            "name": "groupecommercial",
+            "value": "GROUPE PME"
+          },
+          {
+            "name": "agencegestionaire",
+            "value": "Oyonnax Entreprises"
+          },
+          {
+            "name": "extractsperpartname",
+            "value": "\n\n4\n\n$\n\nOyonnax Entreprises\n\n$\n\n1944\n\n$\n\nRODIER\n\n$\n\nS.A. PME FOUR\n\n$\n\nC\n\n$\n\nGROUPE PME\n\n$\n\nGROUPE PME\n\n$\n\nNon\n\n$\n\nNon\n\n$\n\nNon\n\n$\n\n-\n\n$\n\nInconnue\n\n$\n\nOui\n\n$\n\nPIEHAAD\n\n$\n\nNOPSEITE\n\n$\n\nC5-\n\n$\n\n01/01/2022\n\n$\n\nC5-\n\n$\n\n01/01/2022\n\n$\n\n4751Z - COM.DETA.TEXTILES\n\n$\n\n2223Z - FA.ELT/MAT.PLST/CSTR\n\n$\n\n71 968 K€\n\n$\n\n01/12/2009\n\n$\n\n300379450\n\n$\n\n69140\n\n$\n\nRILLIEUX LA PAPE\n\n$\n\nFrance\n\n$\n\nODE\n\n$\n\nOdette\n\n$\n\n791\n\n$ "
+          },
+          {
+            "name": "ancienclient",
+            "value": "Non"
+          },
+          {
+            "name": "notationrisque",
+            "value": "C5-"
+          },
+          {
+            "name": "motifhorschamp",
+            "value": "-"
+          },
+          {
+            "name": "fileext",
+            "value": "csv"
+          },
+          {
+            "name": "representantlegalclientprospect",
+            "value": "C"
+          },
+          {
+            "name": "formejuridique",
+            "value": "SA"
+          },
+          {
+            "name": "marcheintitule",
+            "value": "Entreprises"
+          },
+          {
+            "name": "leadergroupecommercial",
+            "value": "Non"
+          },
+          {
+            "name": "siren",
+            "value": "300379450"
+          },
+          {
+            "name": "datequotationbdf",
+            "value": "2022-01-01 00:00:00"
+          },
+          {
+            "name": "quotationbdf",
+            "value": "C5-"
+          },
+          {
+            "name": "pays",
+            "value": "France"
+          },
+          {
+            "name": "principalinterlocuteurprenom",
+            "value": "Odette"
+          },
+          {
+            "name": "eds",
+            "value": "791"
+          },
+          {
+            "name": "adressesiegesociale",
+            "value": "Rue du Pape"
+          },
+          {
+            "name": "integremasse",
+            "value": "Non"
+          },
+          {
+            "name": "codepostal",
+            "value": "69140"
+          },
+          {
+            "name": "principalinterlocuteur",
+            "value": "Oui"
+          },
+          {
+            "name": "nafinterne",
+            "value": " 4751Z - COM.DETA.TEXTILES"
+          },
+          {
+            "name": "principalinterlocuteurnom",
+            "value": "ODE"
+          },
+          {
+            "name": "datebilan",
+            "value": "2009-12-01"
+          },
+          {
+            "name": "chiffreaffaire",
+            "value": "71"
+          },
+          {
+            "name": "numeroportefeuille",
+            "value": "1944"
+          },
+          {
+            "name": "naf2",
+            "value": "2223Z - FA.ELT/MAT.PLST/CSTR"
+          },
+          {
+            "name": "nomagentgestionnaireportefeuille",
+            "value": "RODIER"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "name": "libellegrouperisque",
+            "value": "-"
+          },
+          {
+            "name": "eds",
+            "value": "791"
+          },
+          {
+            "name": "fileext",
+            "value": "csv"
+          },
+          {
+            "name": "siren",
+            "value": "3333333333"
+          },
+          {
+            "name": "typeclient",
+            "value": "P"
+          },
+          {
+            "name": "tophorschamp",
+            "value": "Non"
+          },
+          {
+            "name": "ancienclient",
+            "value": "Non"
+          },
+          {
+            "name": "datebilan",
+            "value": "2021-12-01"
+          },
+          {
+            "name": "extractsperpartname",
+            "value": "\n\n4\n\n$\n\nOyonnax Entreprises\n\n$\n\n1944\n\n$\n\nRODIER\n\n$\n\nTJLEL\n\n$\n\nP\n\n$\n\n-\n\n$\n\n-\n\n$\n\nOui\n\n$\n\nNon\n\n$\n\nNon\n\n$\n\n-\n\n$\n\nInconnue\n\n$\n\nOui\n\n$\n\nBRICE\n\n$\n\nAnne\n\n$\n\nG\n\n$\n\n01/02/2022\n\n$\n\n-\n\n$\n\n-\n\n$\n\n200K€\n\n$\n\n01/12/2021\n\n$\n\n3333333333\n\n$\n\n51000\n\n$\n\nCHALON EN CHAMPAGNE\n\n$\n\nFRANCE\n\n$\n\n791\n\n$ "
+          },
+          {
+            "name": "prenomagentgestionnaireportefeuille",
+            "value": " VERONIQUE"
+          },
+          {
+            "name": "representantlegalfonction",
+            "value": "Dirgeant"
+          },
+          {
+            "name": "representantlegalprenom",
+            "value": "Anne"
+          },
+          {
+            "name": "derniercri",
+            "value": "2022-03-31 00:00:00"
+          },
+          {
+            "name": "raisonsociale",
+            "value": "TJLEL"
+          },
+          {
+            "name": "fonctionagentgestionnaireportefeuille",
+            "value": "Chargé d'affaires Assistant"
+          },
+          {
+            "name": "notationrisque",
+            "value": "G"
+          },
+          {
+            "name": "nombresalarie",
+            "value": "45"
+          },
+          {
+            "name": "strategierelationnelle",
+            "value": "Inconnue"
+          },
+          {
+            "name": "datenotationrisque",
+            "value": "2022-02-01 00:00:00"
+          },
+          {
+            "name": "groupecommercial",
+            "value": "-"
+          },
+          {
+            "name": "marcheintitule",
+            "value": "Entreprises"
+          },
+          {
+            "name": "agencegestionaire",
+            "value": "Oyonnax Entreprises"
+          },
+          {
+            "name": "representantlegal",
+            "value": "Oui"
+          },
+          {
+            "name": "commune",
+            "value": "CHALON EN CHAMPAGNE"
+          },
+          {
+            "name": "chiffreaffaire",
+            "value": "200"
+          },
+          {
+            "name": "numeroportefeuille",
+            "value": "1944"
+          },
+          {
+            "name": "leadergroupecommercial",
+            "value": "-"
+          },
+          {
+            "name": "representantlegalclientprospect",
+            "value": "P"
+          },
+          {
+            "name": "integremasse",
+            "value": "Oui"
+          },
+          {
+            "name": "adressesiegesociale",
+            "value": "Rue des frères Lumières"
+          },
+          {
+            "name": "version",
+            "value": "1.0"
+          },
+          {
+            "name": "codemarche",
+            "value": "4"
+          },
+          {
+            "name": "motifhorschamp",
+            "value": "-"
+          },
+          {
+            "name": "pays",
+            "value": "FRANCE"
+          },
+          {
+            "name": "codepostal",
+            "value": "51000"
+          },
+          {
+            "name": "formejuridique",
+            "value": "SAS"
+          },
+          {
+            "name": "nomagentgestionnaireportefeuille",
+            "value": "RODIER"
+          },
+          {
+            "name": "quotationbdf",
+            "value": "-"
+          },
+          {
+            "name": "representantlegalnom",
+            "value": "BRICE"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "name": "libellegrouperisque",
+            "value": "-"
+          },
+          {
+            "name": "eds",
+            "value": "480"
+          },
+          {
+            "name": "fileext",
+            "value": "csv"
+          },
+          {
+            "name": "siren",
+            "value": "3333333333"
+          },
+          {
+            "name": "typeclient",
+            "value": "P"
+          },
+          {
+            "name": "tophorschamp",
+            "value": "Oui"
+          },
+          {
+            "name": "ancienclient",
+            "value": "Oui"
+          },
+          {
+            "name": "datebilan",
+            "value": "2021-12-01"
+          },
+          {
+            "name": "extractsperpartname",
+            "value": "\n\n4\n\n$\n\nFerney Voltaire\n\n$\n\n869\n\n$\n\nGEORGETTE\n\n$\n\nMLDS\n\n$\n\nP\n\n$\n\n-\n\n$\n\n-\n\n$\n\nNon\n\n$\n\nOui\n\n$\n\nOui\n\n$\n\nPROSPECT ANCIEN CLIENT\n\n$\n\nSans\n\n$\n\nOui\n\n$\n\nBOUGIE\n\n$\n\nSophie\n\n$\n\nG\n\n$\n\n01/02/2022\n\n$\n\n-\n\n$\n\n-\n\n$\n\n200K€\n\n$\n\n01/12/2021\n\n$\n\n3333333333\n\n$\n\n67000\n\n$\n\nSTRASBOURG\n\n$\n\nFRANCE\n\n$\n\n480\n\n$ "
+          },
+          {
+            "name": "prenomagentgestionnaireportefeuille",
+            "value": "MARIE"
+          },
+          {
+            "name": "representantlegalfonction",
+            "value": "Dirgeant"
+          },
+          {
+            "name": "representantlegalprenom",
+            "value": "Sophie"
+          },
+          {
+            "name": "derniercri",
+            "value": "2022-02-15 00:00:00"
+          },
+          {
+            "name": "raisonsociale",
+            "value": "MLDS"
+          },
+          {
+            "name": "fonctionagentgestionnaireportefeuille",
+            "value": "Chargé d'affaires"
+          },
+          {
+            "name": "notationrisque",
+            "value": "G"
+          },
+          {
+            "name": "nombresalarie",
+            "value": "45"
+          },
+          {
+            "name": "strategierelationnelle",
+            "value": "Sans"
+          },
+          {
+            "name": "datenotationrisque",
+            "value": "2022-02-01 00:00:00"
+          },
+          {
+            "name": "groupecommercial",
+            "value": "-"
+          },
+          {
+            "name": "marcheintitule",
+            "value": "Entreprises"
+          },
+          {
+            "name": "agencegestionaire",
+            "value": "Ferney Voltaire"
+          },
+          {
+            "name": "representantlegal",
+            "value": "Oui"
+          },
+          {
+            "name": "commune",
+            "value": "STRASBOURG"
+          },
+          {
+            "name": "chiffreaffaire",
+            "value": "200"
+          },
+          {
+            "name": "numeroportefeuille",
+            "value": "869"
+          },
+          {
+            "name": "leadergroupecommercial",
+            "value": "-"
+          },
+          {
+            "name": "representantlegalclientprospect",
+            "value": "P"
+          },
+          {
+            "name": "integremasse",
+            "value": "Non"
+          },
+          {
+            "name": "adressesiegesociale",
+            "value": "Avenue de la forêt noire"
+          },
+          {
+            "name": "nomagentgestionnaireportefeuille",
+            "value": "GEORGETTE"
+          },
+          {
+            "name": "version",
+            "value": "1.0"
+          },
+          {
+            "name": "codemarche",
+            "value": "4"
+          },
+          {
+            "name": "motifhorschamp",
+            "value": "PROSPECT ANCIEN CLIENT"
+          },
+          {
+            "name": "pays",
+            "value": "FRANCE"
+          },
+          {
+            "name": "codepostal",
+            "value": "67000"
+          },
+          {
+            "name": "formejuridique",
+            "value": "SAS"
+          },
+          {
+            "name": "datemajhorschamp",
+            "value": "2022-04-20 00:00:00"
+          },
+          {
+            "name": "datemajstrategiecommercial",
+            "value": "2021-03-02"
+          },
+          {
+            "name": "quotationbdf",
+            "value": "-"
+          },
+          {
+            "name": "representantlegalnom",
+            "value": "BOUGIE"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "name": "libellegrouperisque",
+            "value": "-"
+          },
+          {
+            "name": "eds",
+            "value": "480"
+          },
+          {
+            "name": "fileext",
+            "value": "csv"
+          },
+          {
+            "name": "siren",
+            "value": "3333333333"
+          },
+          {
+            "name": "typeclient",
+            "value": "C"
+          },
+          {
+            "name": "tophorschamp",
+            "value": "Non"
+          },
+          {
+            "name": "ancienclient",
+            "value": "Non"
+          },
+          {
+            "name": "datebilan",
+            "value": "2021-12-01"
+          },
+          {
+            "name": "extractsperpartname",
+            "value": "\n\n4\n\n$\n\nFerney Voltaire\n\n$\n\n869\n\n$\n\nGEORGETTE\n\n$\n\nMELMLTTM\n\n$\n\nC\n\n$\n\n-\n\n$\n\n-\n\n$\n\nNon\n\n$\n\nNon\n\n$\n\nNon\n\n$\n\n-\n\n$\n\nRisque\n\n$\n\nOui\n\n$\n\nTHENOU\n\n$\n\nMickaël\n\n$\n\nG\n\n$\n\n01/02/2022\n\n$\n\n-\n\n$\n\n-\n\n$\n\n200K€\n\n$\n\n01/12/2021\n\n$\n\n3333333333\n\n$\n\n67000\n\n$\n\nSTRASBOURG\n\n$\n\nFRANCE\n\n$\n\n480\n\n$ "
+          },
+          {
+            "name": "prenomagentgestionnaireportefeuille",
+            "value": "MARIE"
+          },
+          {
+            "name": "representantlegalfonction",
+            "value": "PDG"
+          },
+          {
+            "name": "representantlegalprenom",
+            "value": "Mickaël"
+          },
+          {
+            "name": "derniercri",
+            "value": "2022-04-01 00:00:00"
+          },
+          {
+            "name": "raisonsociale",
+            "value": "MELMLTTM"
+          },
+          {
+            "name": "fonctionagentgestionnaireportefeuille",
+            "value": "Chargé d'affaires"
+          },
+          {
+            "name": "notationrisque",
+            "value": "G"
+          },
+          {
+            "name": "nombresalarie",
+            "value": "45"
+          },
+          {
+            "name": "strategierelationnelle",
+            "value": "Risque"
+          },
+          {
+            "name": "datenotationrisque",
+            "value": "2022-02-01 00:00:00"
+          },
+          {
+            "name": "groupecommercial",
+            "value": "-"
+          },
+          {
+            "name": "marcheintitule",
+            "value": "Entreprises"
+          },
+          {
+            "name": "agencegestionaire",
+            "value": "Ferney Voltaire"
+          },
+          {
+            "name": "representantlegal",
+            "value": "Oui"
+          },
+          {
+            "name": "commune",
+            "value": "STRASBOURG"
+          },
+          {
+            "name": "chiffreaffaire",
+            "value": "200"
+          },
+          {
+            "name": "numeroportefeuille",
+            "value": "869"
+          },
+          {
+            "name": "leadergroupecommercial",
+            "value": "-"
+          },
+          {
+            "name": "representantlegalclientprospect",
+            "value": "C"
+          },
+          {
+            "name": "integremasse",
+            "value": "Non"
+          },
+          {
+            "name": "adressesiegesociale",
+            "value": "avenue du Neudorf"
+          },
+          {
+            "name": "nomagentgestionnaireportefeuille",
+            "value": "GEORGETTE"
+          },
+          {
+            "name": "version",
+            "value": "1.0"
+          },
+          {
+            "name": "codemarche",
+            "value": "4"
+          },
+          {
+            "name": "motifhorschamp",
+            "value": "-"
+          },
+          {
+            "name": "pays",
+            "value": "FRANCE"
+          },
+          {
+            "name": "codepostal",
+            "value": "67000"
+          },
+          {
+            "name": "formejuridique",
+            "value": "SAS"
+          },
+          {
+            "name": "datemajstrategiecommercial",
+            "value": "2022-04-04"
+          },
+          {
+            "name": "quotationbdf",
+            "value": "-"
+          },
+          {
+            "name": "representantlegalnom",
+            "value": "THENOU"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "name": "libellegrouperisque",
+            "value": "GROUPE PME"
+          },
+          {
+            "name": "eds",
+            "value": "791"
+          },
+          {
+            "name": "fileext",
+            "value": "csv"
+          },
+          {
+            "name": "siren",
+            "value": "3333333333"
+          },
+          {
+            "name": "principalinterlocuteurnom",
+            "value": "MARIE"
+          },
+          {
+            "name": "principalinterlocuteurfonction",
+            "value": "DAF"
+          },
+          {
+            "name": "tophorschamp",
+            "value": "Non"
+          },
+          {
+            "name": "ancienclient",
+            "value": "Non"
+          },
+          {
+            "name": "datebilan",
+            "value": "2021-12-01"
+          },
+          {
+            "name": "extractsperpartname",
+            "value": "\n\n4\n\n$\n\nOyonnax Entreprises\n\n$\n\n1944\n\n$\n\nRODIER\n\n$\n\nS.A.S PME SIX\n\n$\n\nP\n\n$\n\nGROUPE PME\n\n$\n\nGROUPE PME\n\n$\n\nOui\n\n$\n\nNon\n\n$\n\nNon\n\n$\n\n-\n\n$\n\nInconnue\n\n$\n\nOui\n\n$\n\nBRICE\n\n$\n\nAnne\n\n$\n\nG\n\n$\n\n01/02/2022\n\n$\n\n-\n\n$\n\n-\n\n$\n\n200K€\n\n$\n\n01/12/2021\n\n$\n\n3333333333\n\n$\n\n51000\n\n$\n\nCHALON EN CHAMPAGNE\n\n$\n\nFRANCE\n\n$\n\nMARIE\n\n$\n\nMarie\n\n$\n\n791\n\n$ "
+          },
+          {
+            "name": "prenomagentgestionnaireportefeuille",
+            "value": " VERONIQUE"
+          },
+          {
+            "name": "representantlegalfonction",
+            "value": "Dirgeant"
+          },
+          {
+            "name": "representantlegalprenom",
+            "value": "Anne"
+          },
+          {
+            "name": "derniercri",
+            "value": "2022-03-31 00:00:00"
+          },
+          {
+            "name": "raisonsociale",
+            "value": "S.A.S PME SIX"
+          },
+          {
+            "name": "fonctionagentgestionnaireportefeuille",
+            "value": "Chargé d'affaires Assistant"
+          },
+          {
+            "name": "notationrisque",
+            "value": "G"
+          },
+          {
+            "name": "nombresalarie",
+            "value": "45"
+          },
+          {
+            "name": "strategierelationnelle",
+            "value": "Inconnue"
+          },
+          {
+            "name": "datenotationrisque",
+            "value": "2022-02-01 00:00:00"
+          },
+          {
+            "name": "groupecommercial",
+            "value": "GROUPE PME"
+          },
+          {
+            "name": "marcheintitule",
+            "value": "Entreprises"
+          },
+          {
+            "name": "agencegestionaire",
+            "value": "Oyonnax Entreprises"
+          },
+          {
+            "name": "representantlegal",
+            "value": "Oui"
+          },
+          {
+            "name": "numeroportefeuille",
+            "value": "1944"
+          },
+          {
+            "name": "commune",
+            "value": "CHALON EN CHAMPAGNE"
+          },
+          {
+            "name": "chiffreaffaire",
+            "value": "200"
+          },
+          {
+            "name": "typeclient",
+            "value": "P"
+          },
+          {
+            "name": "leadergroupecommercial",
+            "value": "Non"
+          },
+          {
+            "name": "representantlegalclientprospect",
+            "value": "P"
+          },
+          {
+            "name": "integremasse",
+            "value": "Oui"
+          },
+          {
+            "name": "principalinterlocuteurprenom",
+            "value": "Marie"
+          },
+          {
+            "name": "version",
+            "value": "1.0"
+          },
+          {
+            "name": "codemarche",
+            "value": "4"
+          },
+          {
+            "name": "motifhorschamp",
+            "value": "-"
+          },
+          {
+            "name": "pays",
+            "value": "FRANCE"
+          },
+          {
+            "name": "codepostal",
+            "value": "51000"
+          },
+          {
+            "name": "formejuridique",
+            "value": "SAS"
+          },
+          {
+            "name": "adressesiegesociale",
+            "value": "Rue des frères Lumières"
+          },
+          {
+            "name": "nomagentgestionnaireportefeuille",
+            "value": "RODIER"
+          },
+          {
+            "name": "quotationbdf",
+            "value": "-"
+          },
+          {
+            "name": "representantlegalnom",
+            "value": "BRICE"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "name": "representantlegal",
+            "value": "Oui"
+          },
+          {
+            "name": "representantlegalfonction",
+            "value": "Dirgeant"
+          },
+          {
+            "name": "representantlegalprenom",
+            "value": "Sophie"
+          },
+          {
+            "name": "libellegrouperisque",
+            "value": "GROUPE PME"
+          },
+          {
+            "name": "raisonsociale",
+            "value": "S.A.S PME EIGHT"
+          },
+          {
+            "name": "typeclient",
+            "value": "P"
+          },
+          {
+            "name": "fonctionagentgestionnaireportefeuille",
+            "value": "Chargé d'affaires"
+          },
+          {
+            "name": "nombresalarie",
+            "value": "45"
+          },
+          {
+            "name": "leadergroupecommercial",
+            "value": "Non"
+          },
+          {
+            "name": "codemarche",
+            "value": "4"
+          },
+          {
+            "name": "derniercri",
+            "value": "2022-02-15 00:00:00"
+          },
+          {
+            "name": "principalinterlocuteurfonction",
+            "value": "DAF"
+          },
+          {
+            "name": "prenomagentgestionnaireportefeuille",
+            "value": "MARIE"
+          },
+          {
+            "name": "version",
+            "value": "1.0"
+          },
+          {
+            "name": "tophorschamp",
+            "value": "Oui"
+          },
+          {
+            "name": "strategierelationnelle",
+            "value": "Inconnue"
+          },
+          {
+            "name": "datenotationrisque",
+            "value": "2022-02-01 00:00:00"
+          },
+          {
+            "name": "commune",
+            "value": "STRASBOURG"
+          },
+          {
+            "name": "datemajstrategiecommercial",
+            "value": "2021-03-02"
+          },
+          {
+            "name": "groupecommercial",
+            "value": "GROUPE PME"
+          },
+          {
+            "name": "agencegestionaire",
+            "value": "Ferney Voltaire"
+          },
+          {
+            "name": "extractsperpartname",
+            "value": "\n\n4\n\n$\n\nFerney Voltaire\n\n$\n\n869\n\n$\n\nGEORGETTE\n\n$\n\nS.A.S PME EIGHT\n\n$\n\nP\n\n$\n\nGROUPE PME\n\n$\n\nGROUPE PME\n\n$\n\nNon\n\n$\n\nOui\n\n$\n\nOui\n\n$\n\nPROSPECT ANCIEN CLIENT\n\n$\n\nInconnue\n\n$\n\nOui\n\n$\n\nBOUGIE\n\n$\n\nSophie\n\n$\n\nG\n\n$\n\n01/02/2022\n\n$\n\n-\n\n$\n\n-\n\n$\n\n200K€\n\n$\n\n01/12/2021\n\n$\n\n3333333333\n\n$\n\n67000\n\n$\n\nSTRASBOURG\n\n$\n\nFRANCE\n\n$\n\nMARION\n\n$\n\nMarion\n\n$\n\n480\n\n$ "
+          },
+          {
+            "name": "ancienclient",
+            "value": "Oui"
+          },
+          {
+            "name": "notationrisque",
+            "value": "G"
+          },
+          {
+            "name": "motifhorschamp",
+            "value": "PROSPECT ANCIEN CLIENT"
+          },
+          {
+            "name": "fileext",
+            "value": "csv"
+          },
+          {
+            "name": "representantlegalclientprospect",
+            "value": "P"
+          },
+          {
+            "name": "formejuridique",
+            "value": "SAS"
+          },
+          {
+            "name": "marcheintitule",
+            "value": "Entreprises"
+          },
+          {
+            "name": "siren",
+            "value": "3333333333"
+          },
+          {
+            "name": "representantlegalnom",
+            "value": "BOUGIE"
+          },
+          {
+            "name": "quotationbdf",
+            "value": "-"
+          },
+          {
+            "name": "pays",
+            "value": "FRANCE"
+          },
+          {
+            "name": "principalinterlocuteurprenom",
+            "value": "Marion"
+          },
+          {
+            "name": "eds",
+            "value": "480"
+          },
+          {
+            "name": "adressesiegesociale",
+            "value": "Avenue de la forêt noire"
+          },
+          {
+            "name": "integremasse",
+            "value": "Non"
+          },
+          {
+            "name": "codepostal",
+            "value": "67000"
+          },
+          {
+            "name": "numeroportefeuille",
+            "value": "869"
+          },
+          {
+            "name": "datemajhorschamp",
+            "value": "2022-04-20 00:00:00"
+          },
+          {
+            "name": "principalinterlocuteurnom",
+            "value": "MARION"
+          },
+          {
+            "name": "datebilan",
+            "value": "2021-12-01"
+          },
+          {
+            "name": "chiffreaffaire",
+            "value": "200"
+          },
+          {
+            "name": "nomagentgestionnaireportefeuille",
+            "value": "GEORGETTE"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "name": "groupecommercial",
+            "value": "GROUPE PME"
+          },
+          {
+            "name": "motifhorschamp",
+            "value": "-"
+          },
+          {
+            "name": "leadergroupecommercial",
+            "value": "Non"
+          },
+          {
+            "name": "marcheintitule",
+            "value": "Entreprises"
+          },
+          {
+            "name": "chiffreaffaire",
+            "value": "200"
+          },
+          {
+            "name": "representantlegalnom",
+            "value": "THENOU"
+          },
+          {
+            "name": "representantlegalclientprospect",
+            "value": "C"
+          },
+          {
+            "name": "typeclient",
+            "value": "C"
+          },
+          {
+            "name": "nomagentgestionnaireportefeuille",
+            "value": "GEORGETTE"
+          },
+          {
+            "name": "adressesiegesociale",
+            "value": "avenue du Neudorf"
+          },
+          {
+            "name": "numeroportefeuille",
+            "value": "869"
+          },
+          {
+            "name": "datenotationrisque",
+            "value": "2022-02-01 00:00:00"
+          },
+          {
+            "name": "principalinterlocuteurnom",
+            "value": "MARGAUT"
+          },
+          {
+            "name": "codepostal",
+            "value": "67000"
+          },
+          {
+            "name": "integremasse",
+            "value": "Non"
+          },
+          {
+            "name": "representantlegal",
+            "value": "Oui"
+          },
+          {
+            "name": "tophorschamp",
+            "value": "Non"
+          },
+          {
+            "name": "strategierelationnelle",
+            "value": "Inconnue"
+          },
+          {
+            "name": "pays",
+            "value": "FRANCE"
+          },
+          {
+            "name": "agencegestionaire",
+            "value": "Ferney Voltaire"
+          },
+          {
+            "name": "nombresalarie",
+            "value": "45"
+          },
+          {
+            "name": "version",
+            "value": "1.0"
+          },
+          {
+            "name": "commune",
+            "value": "STRASBOURG"
+          },
+          {
+            "name": "extractsperpartname",
+            "value": "\n\n4\n\n$\n\nFerney Voltaire\n\n$\n\n869\n\n$\n\nGEORGETTE\n\n$\n\nS.A.S PME NIGHT\n\n$\n\nC\n\n$\n\nGROUPE PME\n\n$\n\nGROUPE PME\n\n$\n\nNon\n\n$\n\nNon\n\n$\n\nNon\n\n$\n\n-\n\n$\n\nInconnue\n\n$\n\nOui\n\n$\n\nTHENOU\n\n$\n\nMickaël\n\n$\n\nG\n\n$\n\n01/02/2022\n\n$\n\n-\n\n$\n\n-\n\n$\n\n200K€\n\n$\n\n01/12/2021\n\n$\n\n3333333333\n\n$\n\n67000\n\n$\n\nSTRASBOURG\n\n$\n\nFRANCE\n\n$\n\nMARGAUT\n\n$\n\nMargaut\n\n$\n\n480\n\n$ "
+          },
+          {
+            "name": "datebilan",
+            "value": "2021-12-01"
+          },
+          {
+            "name": "notationrisque",
+            "value": "G"
+          },
+          {
+            "name": "fonctionagentgestionnaireportefeuille",
+            "value": "Chargé d'affaires"
+          },
+          {
+            "name": "datemajstrategiecommercial",
+            "value": "2022-04-04"
+          },
+          {
+            "name": "prenomagentgestionnaireportefeuille",
+            "value": "MARIE"
+          },
+          {
+            "name": "ancienclient",
+            "value": "Non"
+          },
+          {
+            "name": "siren",
+            "value": "3333333333"
+          },
+          {
+            "name": "representantlegalprenom",
+            "value": "Mickaël"
+          },
+          {
+            "name": "formejuridique",
+            "value": "SAS"
+          },
+          {
+            "name": "principalinterlocuteurprenom",
+            "value": "Margaut"
+          },
+          {
+            "name": "fileext",
+            "value": "csv"
+          },
+          {
+            "name": "representantlegalfonction",
+            "value": "PDG"
+          },
+          {
+            "name": "codemarche",
+            "value": "4"
+          },
+          {
+            "name": "principalinterlocuteurfonction",
+            "value": "DAF"
+          },
+          {
+            "name": "eds",
+            "value": "480"
+          },
+          {
+            "name": "quotationbdf",
+            "value": "-"
+          },
+          {
+            "name": "derniercri",
+            "value": "2022-04-01 00:00:00"
+          },
+          {
+            "name": "libellegrouperisque",
+            "value": "GROUPE PME"
+          },
+          {
+            "name": "raisonsociale",
+            "value": "S.A.S PME NIGHT"
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "name": "representantlegal",
+            "value": "Oui"
+          },
+          {
+            "name": "representantlegalfonction",
+            "value": "Dirgeant"
+          },
+          {
+            "name": "representantlegalprenom",
+            "value": "XEGTA"
+          },
+          {
+            "name": "principalinterlocuteuremail",
+            "value": "ca@gh.de"
+          },
+          {
+            "name": "daterevisionkyc",
+            "value": "2024-01-25 00:00:00"
+          },
+          {
+            "name": "libellegrouperisque",
+            "value": "Groupe risque TUOXO "
+          },
+          {
+            "name": "raisonsociale",
+            "value": "S.A.S ROETR"
+          },
+          {
+            "name": "typeclient",
+            "value": "C"
+          },
+          {
+            "name": "fonctionagentgestionnaireportefeuille",
+            "value": "Chargé d'affaires"
+          },
+          {
+            "name": "nombresalarie",
+            "value": "30"
+          },
+          {
+            "name": "representantlegalnom",
+            "value": " ZARA "
+          },
+          {
+            "name": "codemarche",
+            "value": "4"
+          },
+          {
+            "name": "derniercri",
+            "value": "2022-03-25 00:00:00"
+          },
+          {
+            "name": "principalinterlocuteurfonction",
+            "value": "DAF"
+          },
+          {
+            "name": "prenomagentgestionnaireportefeuille",
+            "value": "FRANCOIS"
+          },
+          {
+            "name": "version",
+            "value": "1.0"
+          },
+          {
+            "name": "tophorschamp",
+            "value": "Non"
+          },
+          {
+            "name": "principalinterlocuteurtelephone",
+            "value": "606060606"
+          },
+          {
+            "name": "strategierelationnelle",
+            "value": "Inconnue"
+          },
+          {
+            "name": "datenotationrisque",
+            "value": "2022-01-01 00:00:00"
+          },
+          {
+            "name": "commune",
+            "value": "RILLIEUX LA PAPE"
+          },
+          {
+            "name": "groupecommercial",
+            "value": "Groupe PEOSYS"
+          },
+          {
+            "name": "agencegestionaire",
+            "value": "Oyonnax Entreprises"
+          },
+          {
+            "name": "extractsperpartname",
+            "value": "\n\n4\n\n$\n\nOyonnax Entreprises\n\n$\n\n6346\n\n$\n\nGEORGES\n\n$\n\nS.A.S ROETR\n\n$\n\nC\n\n$\n\nGroupe risque TUOXO\n\n$\n\nGroupe PEOSYS\n\n$\n\nNon\n\n$\n\nNon\n\n$\n\nNon\n\n$\n\n-\n\n$\n\nInconnue\n\n$\n\nOui\n\n$\n\nZARA\n\n$\n\nXEGTA\n\n$\n\nC5-\n\n$\n\n01/01/2022\n\n$\n\nC5-\n\n$\n\n01/01/2022\n\n$\n\n4751Z - COM.DETA.TEXTILES\n\n$\n\n4751Z - COM.DETA.TEXTILES\n\n$\n\n59 K€\n\n$\n\n01/12/2009\n\n$\n\n4194871111\n\n$\n\n69140\n\n$\n\nRILLIEUX LA PAPE\n\n$\n\nFrance\n\n$\n\nCARONNE\n\n$\n\nAlain\n\n$\n\n791\n\n$ "
+          },
+          {
+            "name": "ancienclient",
+            "value": "Non"
+          },
+          {
+            "name": "notationrisque",
+            "value": "C5-"
+          },
+          {
+            "name": "motifhorschamp",
+            "value": "-"
+          },
+          {
+            "name": "fileext",
+            "value": "csv"
+          },
+          {
+            "name": "representantlegalclientprospect",
+            "value": "C"
+          },
+          {
+            "name": "formejuridique",
+            "value": "SAS"
+          },
+          {
+            "name": "marcheintitule",
+            "value": "Entreprises"
+          },
+          {
+            "name": "leadergroupecommercial",
+            "value": "Non"
+          },
+          {
+            "name": "siren",
+            "value": "4194871111"
+          },
+          {
+            "name": "datequotationbdf",
+            "value": "2022-01-01 00:00:00"
+          },
+          {
+            "name": "quotationbdf",
+            "value": "C5-"
+          },
+          {
+            "name": "pays",
+            "value": "France"
+          },
+          {
+            "name": "principalinterlocuteurprenom",
+            "value": "Alain"
+          },
+          {
+            "name": "eds",
+            "value": "791"
+          },
+          {
+            "name": "adressesiegesociale",
+            "value": "Rue de Jean Paul"
+          },
+          {
+            "name": "integremasse",
+            "value": "Non"
+          },
+          {
+            "name": "codepostal",
+            "value": "69140"
+          },
+          {
+            "name": "principalinterlocuteur",
+            "value": "Non"
+          },
+          {
+            "name": "nafinterne",
+            "value": " 4751Z - COM.DETA.TEXTILES"
+          },
+          {
+            "name": "principalinterlocuteurnom",
+            "value": "CARONNE"
+          },
+          {
+            "name": "datebilan",
+            "value": "2009-12-01"
+          },
+          {
+            "name": "chiffreaffaire",
+            "value": "59"
+          },
+          {
+            "name": "numeroportefeuille",
+            "value": "6346"
+          },
+          {
+            "name": "naf2",
+            "value": "4751Z - COM.DETA.TEXTILES"
+          },
+          {
+            "name": "nomagentgestionnaireportefeuille",
+            "value": "GEORGES "
+          }
+        ]
+      },
+      {
+        "columns": [
+          {
+            "name": "naf2",
+            "value": "4751Z - COM.DETA.TEXTILES"
+          },
+          {
+            "name": "groupecommercial",
+            "value": "Groupe  BURGER"
+          },
+          {
+            "name": "motifhorschamp",
+            "value": "-"
+          },
+          {
+            "name": "leadergroupecommercial",
+            "value": "Non"
+          },
+          {
+            "name": "marcheintitule",
+            "value": "Entreprises"
+          },
+          {
+            "name": "chiffreaffaire",
+            "value": "59"
+          },
+          {
+            "name": "representantlegalnom",
+            "value": " ZARA "
+          },
+          {
+            "name": "representantlegalclientprospect",
+            "value": "C"
+          },
+          {
+            "name": "nafinterne",
+            "value": " 4751Z - COM.DETA.TEXTILES"
+          },
+          {
+            "name": "typeclient",
+            "value": "C"
+          },
+          {
+            "name": "nomagentgestionnaireportefeuille",
+            "value": "GEORGES "
+          },
+          {
+            "name": "adressesiegesociale",
+            "value": "Rue de Jean Paul"
+          },
+          {
+            "name": "numeroportefeuille",
+            "value": "6346"
+          },
+          {
+            "name": "datenotationrisque",
+            "value": "2022-01-01 00:00:00"
+          },
+          {
+            "name": "codepostal",
+            "value": "69140"
+          },
+          {
+            "name": "integremasse",
+            "value": "Non"
+          },
+          {
+            "name": "representantlegal",
+            "value": "Oui"
+          },
+          {
+            "name": "tophorschamp",
+            "value": "Non"
+          },
+          {
+            "name": "strategierelationnelle",
+            "value": "Inconnue"
+          },
+          {
+            "name": "pays",
+            "value": "France"
+          },
+          {
+            "name": "agencegestionaire",
+            "value": "Oyonnax Entreprises"
+          },
+          {
+            "name": "daterevisionkyc",
+            "value": "2024-01-25 00:00:00"
+          },
+          {
+            "name": "nombresalarie",
+            "value": "20"
+          },
+          {
+            "name": "version",
+            "value": "1.0"
+          },
+          {
+            "name": "commune",
+            "value": "RILLIEUX LA PAPE"
+          },
+          {
+            "name": "extractsperpartname",
+            "value": "\n\n4\n\n$\n\nOyonnax Entreprises\n\n$\n\n6346\n\n$\n\nGEORGES\n\n$\n\nS.A.S PME BURGER B\n\n$\n\nC\n\n$\n\nGroupe BURGER\n\n$\n\nGroupe BURGER\n\n$\n\nNon\n\n$\n\nNon\n\n$\n\nNon\n\n$\n\n-\n\n$\n\nInconnue\n\n$\n\nOui\n\n$\n\nZARA\n\n$\n\nGérad\n\n$\n\nC5-\n\n$\n\n01/01/2022\n\n$\n\nC5-\n\n$\n\n01/01/2022\n\n$\n\n4751Z - COM.DETA.TEXTILES\n\n$\n\n4751Z - COM.DETA.TEXTILES\n\n$\n\n59 K€\n\n$\n\n01/12/2009\n\n$\n\n4194871111\n\n$\n\n69140\n\n$\n\nRILLIEUX LA PAPE\n\n$\n\nFrance\n\n$\n\n791\n\n$ "
+          },
+          {
+            "name": "datebilan",
+            "value": "2009-12-01"
+          },
+          {
+            "name": "notationrisque",
+            "value": "C5-"
+          },
+          {
+            "name": "datequotationbdf",
+            "value": "2022-01-01 00:00:00"
+          },
+          {
+            "name": "formejuridique",
+            "value": "SAS"
+          },
+          {
+            "name": "prenomagentgestionnaireportefeuille",
+            "value": "FRANCOIS"
+          },
+          {
+            "name": "ancienclient",
+            "value": "Non"
+          },
+          {
+            "name": "siren",
+            "value": "4194871111"
+          },
+          {
+            "name": "representantlegalprenom",
+            "value": "Gérad"
+          },
+          {
+            "name": "fileext",
+            "value": "csv"
+          },
+          {
+            "name": "representantlegalfonction",
+            "value": "Dirgeant"
+          },
+          {
+            "name": "codemarche",
+            "value": "4"
+          },
+          {
+            "name": "eds",
+            "value": "791"
+          },
+          {
+            "name": "quotationbdf",
+            "value": "C5-"
+          },
+          {
+            "name": "derniercri",
+            "value": "2022-03-25 00:00:00"
+          },
+          {
+            "name": "libellegrouperisque",
+            "value": "Groupe  BURGER"
+          },
+          {
+            "name": "raisonsociale",
+            "value": "S.A.S PME BURGER B"
+          },
+          {
+            "name": "fonctionagentgestionnaireportefeuille",
+            "value": "Chargé d'affaires"
+          }
+        ]
+      }
+    ]
+  }
+}

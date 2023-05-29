@@ -354,6 +354,178 @@ export class SharedConstants {
     { id: 'codemarche', name: 'Marché', checked: false },
     { id: 'eds', name: 'EDS', checked: false },
   ];
+  //Commerciale
+  public static initHeadersCommercial = [
+    {
+      id: 'groupecommercial',
+      name: 'Relation commerciale',
+      checked: false,
+      canBeSort: true,
+    },
+
+    { id: 'typeclient', name: 'C/P', checked: true, canBeSort: true },
+    {
+      id: 'strategierelationnelle',
+      name: 'Stratégie relationelle',
+      checked: true,
+      canBeSort: true,
+    },
+    {
+      id: 'indiceprincipalisation',
+      name: 'Indice de principalisation\t',
+      checked: true,
+      canBeSort: true,
+    },
+    { id: 'montantpnb', name: 'PNB (k€)', checked: true, canBeSort: true },
+    {
+      id: 'nbrcomptesrendus',
+      name: 'Nb de comptes rendus sur 12 mois',
+      checked: true,
+      canBeSort: true,
+    },
+    {
+      id: 'derniergcri',
+      name: 'Dernier compte rendu',
+      checked: true,
+      canBeSort: true,
+    },
+    {
+      id: 'representantlegal',
+      name: 'Dirigeant client',
+      checked: true,
+      canBeSort: true,
+    },
+    {
+      id: 'tophorschamp',
+      name: 'En/hors champ',
+      checked: false,
+      canBeSort: true,
+    },
+    {
+      id: 'partmarche',
+      name: 'Part de marché financière',
+      checked: false,
+      canBeSort: true,
+    },
+    {
+      id: 'equipecommerciale',
+      name: 'Equipe commerciale',
+      checked: false,
+      canBeSort: true,
+    },
+    {
+      id: 'interlocuteurclient',
+      name: 'Interlocuteur client',
+      checked: false,
+      canBeSort: true,
+    },
+    { id: 'davactif', name: 'DAV actif', checked: false, canBeSort: true },
+  ];
+  //Equipement
+  public static initHeadersEquipement = [
+    {
+      id: 'groupecommercial',
+      name: 'Relation commerciale',
+      checked: false,
+      canBeSort: true,
+    },
+    { id: 'typeclient', name: 'C/P', checked: true, canBeSort: true },
+    {
+      id: 'eds',
+      name: 'Ca confié',
+      checked: true,
+      canBeSort: true,
+      isExtended: true,
+    },
+    {
+      id: 'principalinterlocuteur',
+      name: 'Interlocuteur principal',
+      checked: false,
+      canBeSort: true,
+      parentId: 'eds',
+    },
+    {
+      id: 'tophorschamp',
+      name: 'Hors Champ / motif',
+      checked: false,
+      canBeSort: true,
+      parentId: 'eds',
+    },
+    {
+      id: 'nombresalarie',
+      name: 'Nombre de salariés',
+      checked: false,
+      canBeSort: true,
+      parentId: 'eds',
+    },
+    /*{
+      id: 'caconfiek',
+      name: 'Ca confié (K€)',
+      checked: false,
+      canBeSort: true,
+      parentId: 'caconfie',
+    },
+    {
+      id: 'internationalk',
+      name: 'International (K€)',
+      checked: false,
+      canBeSort: true,
+      parentId: 'caconfie',
+    },
+    {
+      id: 'monetiq',
+      name: 'Monétique (K€)',
+      checked: false,
+      canBeSort: true,
+      parentId: 'caconfie',
+    },*/
+    {
+      id: 'nafinterne',
+      name: 'Ingenierie sociale',
+      checked: true,
+      canBeSort: true,
+    },
+    { id: 'codepostal', name: 'International', checked: true, canBeSort: true },
+    {
+      id: 'adressesiegesociale',
+      name: 'Assurances',
+      checked: true,
+      canBeSort: true,
+    },
+    {
+      id: 'numeroportefeuille',
+      name: 'Equipement flux',
+      checked: true,
+      canBeSort: true,
+    },
+    {
+      id: 'raisonsociale',
+      name: "Banque d'affaires",
+      checked: true,
+      canBeSort: true,
+    },
+    {
+      id: 'financementstructures',
+      name: 'Financements structurés',
+      checked: false,
+      canBeSort: true,
+    },
+    { id: 'davactif', name: 'DAV Actif', checked: false, canBeSort: true },
+    {
+      id: 'equipecommerciale',
+      name: 'Equipe commerciale',
+      checked: false,
+      canBeSort: true,
+    },
+    {
+      id: 'interlocuteurclient',
+      name: 'Interlocuteur client',
+      checked: false,
+      canBeSort: true,
+    },
+    { id: 'davactif', name: 'DAV actif', checked: false, canBeSort: true },
+  ];
+  //
   //initilisation fo table data , i use that with behaviour subject but it make a problem (two call server)
   // public static initDataTable = {
   //   success: true,

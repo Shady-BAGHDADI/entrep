@@ -49,3 +49,66 @@
   background: #8c8383 !important;
   border-radius: 50%;
 }
+
+/*
+the headers of table to do the sort by numbers : 10,50...
+*/
+.container-result-row {
+  display: flex;
+  justify-content: start;
+  p {
+    height: 33px !important;
+    line-height: 33px !important;
+    font-size: 14px !important;
+  }
+  .p-result {
+    margin-right: 15px;
+  }
+  .p-pipe {
+    margin: 0 45px;
+  }
+  .select-size {
+    height: 40px;
+    width: 160px;
+  }
+  .setting-export-icon {
+    display: flex;
+    font-size: none !important;
+    div {
+      margin-right: 16px;
+      display: flex;
+      cursor: pointer;
+      font-size: none !important;
+
+      span,
+      p {
+        line-height: 33px !important;
+        font-size: none !important;
+      }
+      p {
+        text-decoration: underline;
+        font-weight: 5OO;
+        margin-right: 16px !important;
+        color: #454545 !important;
+        font-size: none !important;
+      }
+    }
+  }
+}
+
+::ng-deep nz-pagination {
+  display: flex !important;
+  justify-content: end !important;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  order: 1;
+}
+
+.right {
+  order: 2;
+}

@@ -2,11 +2,43 @@
 <br />
 
 
-<div class="icon" (click)="openModalOfCheckBoxList()">
-  <span style=" display: inline-block;background: #6a6d66 !important;" nz-icon [nzType]="'setting'" [nzTheme]="'fill'"
-    style="margin-right: 6px"></span>Personaliser la vue
-</div>
 
+
+<div class="container">
+  <div style="display:flex" class="left">
+    <div class="container-result-row">
+      <p class="p-result">{{lengthDataTable}} resultats </p>
+      <nz-select class="select-size" [(ngModel)]="rowCount" (ngModelChange)="paginateTable(rowCount)">
+        <nz-option *ngFor="let item of filterCases" [nzLabel]="item.name" [nzValue]="item.value">
+
+        </nz-option>
+
+      </nz-select>
+
+      <p class="p-pipe">|</p>
+
+      <div class="setting-export-icon">
+        <div (click)="openModalOfCheckBoxList()">
+          <span nz-icon [nzType]="'setting'" [nzTheme]="'fill'" style="margin-right: 6px;font-size: 20px;"></span>
+          <p>Personaliser la vue</p>
+        </div>
+        <div (click)=" export()">
+          <span nz-icon nzType="download" nzTheme="outline" style="margin-right: 6px;font-size: 20px;"></span>
+          <p>Exporter</p>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+  <div class="right">
+    <nz-pagination [nzPageIndex]="1" [nzTotal]="lengthDataTable" [nzPageSize]="rowCount"
+      (nzPageIndexChange)="onPageChange($event)"></nz-pagination>
+  </div>
+</div>
 <nz-table>
   <thead>
     <tr>
@@ -41,9 +73,105 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let dt of dataTableForView">
+    <tr *ngFor="let result of dataTableForView">
 
-      <td *ngFor="let c of dt.columns">{{c.value }}</td>
+      <ng-container *ngFor="let column of result.columns">
+
+        <ng-container [ngSwitch]="column.name">
+          <td *ngSwitchCase="'principalinterlocuteur'">
+            {{column.value.nom}}-{{column.value.prenom}}
+            <br>
+            {{column.value.tel}}
+            <br>
+            {{column.value.email}}
+          </td>
+          <td *ngSwitchCase="'representantlegal'">
+
+            <ng-container *ngIf="isCommercial else repIdentite">
+
+              {{column.value.dirigeant}}
+
+
+            </ng-container>
+            <ng-template #repIdentite>
+              {{column.value.nom}} {{column.value.prenom}}-({{column.value.type}})
+              <br>
+              {{column.value.fonction}}
+            </ng-template>
+          </td>
+
+          <td *ngSwitchCase="'groupecommercial'">
+
+            <span nz-icon nzType="home" nzTheme="outline" *ngIf="column.leader "></span>
+            {{column.value }}
+          </td>
+
+          <td *ngSwitchCase="'eds'">
+
+            {{column.value.eds }}
+          </td>
+
+          <td *ngSwitchCase="'codemarche'">
+
+            {{column.value.codemarche }}
+          </td>
+
+          <td *ngSwitchCase="'numeroportefeuille'">
+
+            N° {{column.value.numero }}
+            <br>
+            {{column.value.nom }} - {{column.value.prenom }}
+            <br>
+            {{column.value.fonction }}
+          </td>
+          <td *ngSwitchCase="'datenotationrisque'" class="datenotationrisque"
+            [ngClass]="column.isExtended && 'rowExtended'">
+            <span> {{ column.value }} </span>
+          </td>
+          <td *ngSwitchCase="'strategierelationnelle'">
+            <div style="display: flex; flex-direction: row; align-items: center">
+              <input type="checkbox" (click)="selectedColumn($event)" />
+              <div style="
+                display: flex;
+                flex-direction: column;
+                margin-left: 8px;
+              ">
+
+                <strong>{{ column.value }}</strong>
+                <span>mis à jour le {{ column.date }}</span>
+              </div>
+            </div>
+          </td>
+          <td *ngSwitchCase="'notationrisque'">
+            <strong>{{ column.value }}</strong> ({{ column.date }})
+          </td>
+
+          <td *ngSwitchCase="'tophorschamp'">
+            {{ column.value.motif }} <br>
+            {{column.value.date}}
+          </td>
+
+
+
+
+          <td *ngSwitchDefault> {{column.value }}</td>
+
+        </ng-container>
+
+
+
+
+
+      </ng-container>
     </tr>
   </tbody>
 </nz-table>
+<div style="display: flex;justify-content: right;margin-top: 15px;">
+  <nz-pagination [nzPageIndex]="3" [nzTotal]="50"></nz-pagination>
+
+</div>
+<ng-container>
+  <legend [listOfLegends]="listOfLegends" [widthLegend]="'500px'" style="margin-top: 15px;"></legend>
+  <legend-banner [listOfLegends]="listOfLegends" [widthLegend]="'500px'"></legend-banner>
+
+</ng-container>
