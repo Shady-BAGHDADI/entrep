@@ -19,8 +19,8 @@
         <div>
           <span *ngIf="errorMessage" class="custom-error-message">errorMessage </span>
 
-          <label nz-checkbox formControlName="isClient" nzStatus="error">Clients</label>
-          <label nz-checkbox formControlName="isProspect" nzDanger="error">Tous les prospects</label>
+          <input type="checkbox" formControlName="isClient">Clients
+          <input type="checkbox" formControlName="isProspect">Tous les prospects
         </div>
 
         <input nz-input [nzSize]="'large'" formControlName="text" placeholder="Exemple" />

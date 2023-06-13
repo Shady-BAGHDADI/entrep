@@ -1,4 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  OnInit,
+  Output,
+  QueryList,
+  ViewChild,
+  ViewChildren,
+} from '@angular/core';
 import { NzModalService } from 'ng-zorro-antd/modal';
 import { IHeader } from '../../models/header';
 import { CrmService } from '../../services/crm.service';
@@ -6,6 +14,7 @@ import { PopupDisplayCheckboxListComponent } from 'app/modules/clients-prospects
 import { IResultSearch } from 'shared/models/resultsearch';
 import { SharedConstants } from 'shared/constants';
 import { Legend } from 'shared/models/legend';
+import { StrategieCommercialBannerComponent } from '../strategie-commercial-banner/strategie-commercial-banner.component';
 
 @Component({
   selector: 'shared-table',
@@ -14,20 +23,24 @@ import { Legend } from 'shared/models/legend';
 })
 export class TableComponent implements OnInit {
   headersForView: IHeader[] = [];
-  isCommercial = false;
+
   /*
   sort page by numbers
   */
   filterCases: any[] = [];
   rowCount: any;
+  isCheckboxSelected = false;
+
   constructor(
     private readonly crmService: CrmService,
     private readonly modalService: NzModalService
   ) {}
-  ngOnInit(): void {
+
+  ngOnInit() {
     //this.displayHeadersForView();
     this.dataToDisplayInTable();
-    this.isCommercial = this.crmService.buttonActiveType === 'commercial';
+    //ngswitch deux colonnes de mm id name
+
     this.filterCases = [
       {
         name: 'Afficher par 10',
@@ -45,8 +58,43 @@ export class TableComponent implements OnInit {
     ];
     this.rowCount = this.filterCases[0].value;
     this.getStoredForm();
+
+    this.firstReload();
+  }
+  //pour afficher le banner que si synthetique
+  //get is() to appeler en html sans parenthese
+  get isSynthetique(): boolean {
+    return this.crmService.popUpHeadersText === 'Synthétique';
+  }
+  get isCommercial(): boolean {
+    return this.crmService.buttonActiveType === 'commercial';
   }
 
+  toggleCheckbox() {
+    this.isCheckboxSelected = this.listInputCheckBox.some(
+      (checkBox) => checkBox.nativeElement.checked
+    );
+  }
+
+  firstReload() {
+    let newFormShapCRM: any = {
+      skipFrom: 0,
+      skipCount: 10,
+      text: '',
+      data: [
+        {
+          name: 'typeclient',
+          value: 'C',
+        },
+      ],
+    };
+    this.crmService.storeForm(newFormShapCRM);
+    this.crmService
+      .sendSearchCrmForm(newFormShapCRM)
+      .subscribe((resultSearch: IResultSearch) => {
+        this.crmService.resultSearch(resultSearch);
+      });
+  }
   displayHeadersForView() {
     // this.crmService.checkBoxModel$.subscribe((headers: IHeader[]) => {
     //   this.headersForView = headers.filter((header) => header.checked);
@@ -138,8 +186,43 @@ faut le changer par "-"
       nzContent: PopupDisplayCheckboxListComponent,
     });
   }
-  selectedColumn(event: any) {
+  //select && deselect all from children to parent
+  @ViewChildren('checkBox') listInputCheckBox: QueryList<any>; //list des inputs checkBox
+  selectAllCheckBox(event: any) {
+    console.error('parent', event, this.listInputCheckBox);
     //pour chaque checkbox, on trigger un click si il n'est pas checked et que checkedAll est true
+    this.listInputCheckBox.toArray().forEach((elt) => {
+      console.error('elt', elt);
+
+      if (
+        (!event && elt.nativeElement.checked) ||
+        (event && !elt.nativeElement.checked)
+      ) {
+        elt.nativeElement.click();
+      }
+      if (event && elt.nativeElement.checked) {
+        return;
+      }
+    });
+  }
+
+  //send the length to the child
+  @Output() listCheckBoxEmitter = new EventEmitter<any[]>();
+  listOfCheckBox = [];
+  checkBoxClicked(result) {
+    //on check s'il est deja coché
+    const valueExist = this.listOfCheckBox?.some(
+      (oneCheckbox) => oneCheckbox === result
+    );
+    if (!valueExist) {
+      this.listOfCheckBox?.push(result);
+    } else {
+      const index = this.listOfCheckBox.indexOf(result);
+      if (index > -1) {
+        this.listOfCheckBox.splice(index, 1);
+      }
+    }
+    console.log('listOfCheckBox', this.listOfCheckBox);
   }
 
   export() {}

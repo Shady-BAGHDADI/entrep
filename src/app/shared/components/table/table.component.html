@@ -8,7 +8,7 @@
   <div style="display:flex" class="left">
     <div class="container-result-row">
       <p class="p-result">{{lengthDataTable}} resultats </p>
-      <nz-select class="select-size" [(ngModel)]="rowCount" (ngModelChange)="paginateTable(rowCount)">
+      <nz-select [(ngModel)]="rowCount" (ngModelChange)="paginateTable(rowCount)">
         <nz-option *ngFor="let item of filterCases" [nzLabel]="item.name" [nzValue]="item.value">
 
         </nz-option>
@@ -42,7 +42,7 @@
 <nz-table>
   <thead>
     <tr>
-      <th nzWidth="40px" *ngFor="let header of headersForView" style="position:relative" class="sortable">
+      <th nzWidth="40px" *ngFor="let header of headersForView" style="position:relative ; " class="sortable">
 
         <div class="sort-label">
           <div>
@@ -88,9 +88,12 @@
           <td *ngSwitchCase="'representantlegal'">
 
             <ng-container *ngIf="isCommercial else repIdentite">
-
-              {{column.value.dirigeant}}
-
+              <div style="display:flex;justify-content:center">
+                <div [style.background]="column.value.dirigeant==='Oui' ?'green' : 'gray'" style="border-radius: 50%; width: 20px
+              ;color: white;text-align:center ">
+                  <span nz-icon nzType="check" nzTheme="outline"></span>
+                </div>
+              </div>
 
             </ng-container>
             <ng-template #repIdentite>
@@ -130,7 +133,7 @@
           </td>
           <td *ngSwitchCase="'strategierelationnelle'">
             <div style="display: flex; flex-direction: row; align-items: center">
-              <input type="checkbox" (click)="selectedColumn($event)" />
+              <input type="checkbox" #checkBox (change)="toggleCheckbox()" (click)="checkBoxClicked(result)" />
               <div style="
                 display: flex;
                 flex-direction: column;
@@ -151,8 +154,24 @@
             {{column.value.date}}
           </td>
 
+          <td *ngSwitchCase="'fiche'">
+            <div class="container-fiche">
+              <span nz-icon nzType="snippets" nzTheme="outline"></span>
+              <span>Voir</span>
+            </div>
+          </td>
+          <td *ngSwitchCase="'outils'">
+            <div class="container-outil">
+              <span nz-icon nzType="more" nzTheme="outline"></span>
+            </div>
+          </td>
 
-
+          <td *ngSwitchCase="'equipecommercial'">
+            <div class="container-fiche">
+              <span nz-icon nzType="user" nzTheme="outline"></span>
+              <span>Voir (3)</span>
+            </div>
+          </td>
 
           <td *ngSwitchDefault> {{column.value }}</td>
 
@@ -170,8 +189,16 @@
   <nz-pagination [nzPageIndex]="3" [nzTotal]="50"></nz-pagination>
 
 </div>
-<ng-container>
+
+<ng-container *ngIf="isSynthetique">
   <legend [listOfLegends]="listOfLegends" [widthLegend]="'500px'" style="margin-top: 15px;"></legend>
   <legend-banner [listOfLegends]="listOfLegends" [widthLegend]="'500px'"></legend-banner>
 
+
+</ng-container>
+<ng-container *ngIf="isCommercial && isCheckboxSelected">
+
+
+  <shared-strategie-commercial-banner [lengthCheckbox]="listOfCheckBox?.length"
+    (selectAllCheckBoxEmitter)="selectAllCheckBox($event)"></shared-strategie-commercial-banner>
 </ng-container>

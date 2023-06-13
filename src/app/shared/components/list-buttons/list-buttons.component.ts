@@ -30,7 +30,8 @@ export class ListButtonsComponent {
     this.activeButton = button.type;
     this.crmService.buttonActiveType = button.type;
     this.crmService.popUpHeadersText = button.label;
-    console.warn('button.type;', button.type);
+
+    console.warn('button.type;', button.label);
 
     let headers: IHeader[];
     switch (this.activeButton) {

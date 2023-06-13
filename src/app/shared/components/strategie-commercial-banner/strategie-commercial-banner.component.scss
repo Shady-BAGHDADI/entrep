@@ -1,0 +1,42 @@
+.container-strategies {
+  background: #454545;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 12px;
+  width: 513px;
+  border-radius: 8px;
+  margin: auto;
+  position: sticky;
+  bottom: 25px;
+  z-index: 999;
+  .lengthCheckbox {
+    font-size: 16px !important;
+    color: #fff;
+    line-height: 24px;
+  }
+  .iconButton {
+    display: flex;
+    flex-direction: row;
+    border-left: 1px solid #d8d8d8;
+    padding-left: 20px;
+    cursor: pointer;
+    line-height: 29px;
+    font-size: none !important;
+    .txt {
+      font-size: 14px;
+      color: #fff;
+      margin-left: 10px;
+      text-decoration: underline;
+    }
+  }
+}
+body
+  > app-root
+  > app-clients-prospects
+  > div
+  > shared-table
+  > shared-strategie-commercial-banner
+  > div
+  > div:nth-child {
+}

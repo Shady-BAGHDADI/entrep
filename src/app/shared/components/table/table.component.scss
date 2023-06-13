@@ -67,9 +67,9 @@ the headers of table to do the sort by numbers : 10,50...
   .p-pipe {
     margin: 0 45px;
   }
-  .select-size {
-    height: 40px;
-    width: 160px;
+  ::ng-deep .ant-select-selector {
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
   }
   .setting-export-icon {
     display: flex;
@@ -111,4 +111,141 @@ the headers of table to do the sort by numbers : 10,50...
 
 .right {
   order: 2;
+}
+::ng-deep input[type="checkbox"] {
+  accent-color: #a1176c !important;
+}
+/*Add right left boder-radius to the head table*/
+::ng-deep nz-table thead tr th:first-child {
+  border-radius: 20px 0 0 0 !important;
+}
+::ng-deep nz-table thead tr th:last-child {
+  border-radius: 0 20px 0 0 !important;
+}
+/* */
+::ng-deep nz-table tbody tr:hover {
+  background: #f6e8f0;
+}
+::ng-deep .ant-table-tbody > tr.ant-table-row:hover > td {
+  background: none;
+}
+::ng-deep .ant-pagination-item-active {
+  border: none;
+  // border-radius: 5px;
+
+  a {
+    background-color: #a1176c;
+    color: #f6e8f0;
+    border-radius: 5px;
+  }
+}
+::ng-deep .ant-pagination-item-active:hover {
+  border: 1px solid #d9d9d9 !important;
+
+  a:hover {
+    background-color: #a1176c;
+
+    color: #f6e8f0 !important;
+    border-radius: none;
+  }
+}
+
+::ng-deep .ant-pagination-item {
+  border-radius: 5px;
+}
+
+::ng-deep .ant-pagination-item:hover {
+  border-color: #a1176c !important;
+  .ng-star-inserted {
+    color: #a1176c !important;
+  }
+}
+//modifier la taille d'ecriture
+td {
+  font-weight: 400 !important;
+}
+//regler la taille des tous les tr de mm hauteur resoulu le probleme de taille de tr
+tr {
+  height: 80px;
+}
+//la ligne entre deux td
+tbody tr td {
+  border-bottom: 3px solid #e9e9e9;
+}
+
+//SELECT LIST
+::ng-deep .ant-select-selector {
+  //height: 40px !important;
+  background: none !important;
+  box-shadow: none !important;
+  border-color: #d8d8d8 !important;
+  height: 40px !important;
+  width: 160px !important;
+  .ant-select-selection-item {
+    height: 40px;
+    width: 100%;
+    padding: 3px !important;
+
+    text-overflow: ellipsis; //kif tes8ar el fenetre text da5leni yebda ...
+    overflow: hidden; //bech yab9ou dima da5el esondou9
+    white-space: nowrap;
+  }
+}
+::ng-deep
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  color: #a1176c;
+  background-color: #fafafa !important;
+}
+::ng-deep .ant-select-arrow {
+  top: 20px;
+  color: black !important;
+}
+::ng-deep .custom-select .ant-select-arrow-icon:before {
+  content: "\e9a2"; /* Code de l'icône fermée */
+}
+@media screen and (max-width: 858px) {
+  ::ng-deep .right > nz-pagination > ul {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  ::ng-deep .ant-table-tbody > tr > td > span {
+    text-align: center !important;
+  }
+}
+.container-fiche {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  span:first-child {
+    background: #fafafa;
+    border-radius: 70%;
+    margin-right: 6px;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 18px;
+    margin-right: 6px;
+    color: #52617b;
+  }
+  span:last-child {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.container-outil {
+  display: flex;
+  justify-content: center;
+
+  span {
+    font-weight: 18px;
+
+    color: #52617b;
+  }
 }

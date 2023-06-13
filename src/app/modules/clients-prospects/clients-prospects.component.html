@@ -1,12 +1,14 @@
-<app-search-form></app-search-form>
+<div class="content">
+  <app-search-form></app-search-form>
 
-<nz-tabset [nzSelectedIndex]="selectedTabIndex" nzType="card" style="margin-top: 20px;">
-  <nz-tab *ngFor="let tab of tabs; let i = index" [nzTitle]="tab">
-    <ng-template nz-tab>
-      <shared-list-buttons></shared-list-buttons>
-    </ng-template>
-  </nz-tab>
-</nz-tabset>
-<div style="padding: 20px">
+  <nz-tabset [nzSelectedIndex]="selectedTabIndex" nzType="card" style="margin-top: 20px;">
+    <nz-tab *ngFor="let tab of tabs; let i = index" [nzTitle]="tab">
+      <ng-template nz-tab>
+        <shared-list-buttons></shared-list-buttons>
+      </ng-template>
+    </nz-tab>
+  </nz-tabset>
+
   <shared-table></shared-table>
+
 </div>

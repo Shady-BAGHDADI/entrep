@@ -37,7 +37,7 @@ describe('SearchFormComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  fit('should display error message when no client or prospect is selected', () => {
+  it('should display error message when no client or prospect is selected', () => {
     const button = fixture.debugElement.query(By.css('button'));
     expect(button.nativeElement.disabled).toBe(false); // button should be enabled initially
     component.requiredOneTypeClient();

@@ -1,8 +1,8 @@
 <div style="padding: 20px;">
   <ng-container *ngFor="let button of buttons ">
 
-    <button class="btn-btn" nz-button [nzSize]="size" nzType="default" (click)="setActiveButton(button)"
-      [ngClass]="{active:activeButton===button.type}">
+    <button class="btn-btn " nz-button [nzSize]="size" nzType="default" (click)="setActiveButton(button)"
+      [ngClass]="{active: activeButton===button.type}">
       {{ button.label }}
     </button>
   </ng-container>

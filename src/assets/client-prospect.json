@@ -9,7 +9,7 @@
         "columns": [
           {
             "name": "representantlegal",
-            "value": "Oui"
+            "value": "Non"
           },
           {
             "name": "representantlegalfonction",

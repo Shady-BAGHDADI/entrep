@@ -1,0 +1,19 @@
+<div class="container-strategies">
+  <div class="lengthCheckbox">
+    {{lengthCheckbox}} {{lengthCheckbox === 1 || lengthCheckbox===0 ? 'sélectionnée' : 'sélectionnées'}}
+
+  </div>
+  <div class="iconButton">
+
+    <span nz-icon nzType="edit" nzTheme="outline" (click)="updateStrategies()"
+      style="cursor: pointer;font-size: 28px; color: #f5f5f5;"></span>
+    <span class="txt">Modifier</span>
+  </div>
+  <div class="iconButton" (click)="selectAll()">
+
+    <span nz-icon [nzType]="isAllChecked ? 'check-circle' : 'close-circle'" nzTheme="outline"
+      style="cursor: pointer;font-size: 28px; color: #f5f5f5;"></span>
+    <span class="txt">Tout sélectionner</span>
+
+  </div>
+</div>

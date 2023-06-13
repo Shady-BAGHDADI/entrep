@@ -32,6 +32,7 @@ export class SearchFormComponent implements OnInit {
       isProspect: false,
     });
   }
+
   onSubmit() {
     //select au minimum un client ou un prospect
     this.requiredOneTypeClient();

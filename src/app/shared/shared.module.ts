@@ -10,6 +10,7 @@ import { TableComponent } from './components/table/table.component';
 import { NgZerroModule } from '../ng-zerro.module';
 import { LegendComponent } from './components/legend/legend.component';
 import { LegendBannerComponent } from './components/legend-banner/legend-banner.component';
+import { StrategieCommercialBannerComponent } from './components/strategie-commercial-banner/strategie-commercial-banner.component';
 const sharedModules = [
   CommonModule,
   BrowserModule,
@@ -25,6 +26,7 @@ const sharedComponents = [
   TableComponent,
   LegendComponent,
   LegendBannerComponent,
+  StrategieCommercialBannerComponent,
 ];
 @NgModule({
   declarations: [...sharedComponents],
