@@ -1,9 +1,16 @@
 import { Component } from '@angular/core';
+import { TableComponent } from '../../shared/components/table/table.component';
+import { ListButtonsComponent } from '../../shared/components/list-buttons/list-buttons.component';
+import { NgFor } from '@angular/common';
+import { NzTabsModule } from 'ng-zorro-antd/tabs';
+import { SearchFormComponent } from './components/search-form/search-form.component';
 
 @Component({
-  selector: 'app-clients-prospects',
-  templateUrl: './clients-prospects.component.html',
-  styleUrls: ['./clients-prospects.component.scss'],
+    selector: 'app-clients-prospects',
+    templateUrl: './clients-prospects.component.html',
+    styleUrls: ['./clients-prospects.component.scss'],
+    standalone: true,
+    imports: [SearchFormComponent, NzTabsModule, NgFor, ListButtonsComponent, TableComponent]
 })
 export class ClientsProspectsComponent {
   singleValue = 'a10';

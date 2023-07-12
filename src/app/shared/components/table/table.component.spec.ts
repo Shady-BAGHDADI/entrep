@@ -20,17 +20,16 @@ describe('TableComponent', () => {
     mockCrmService = jasmine.createSpyObj(['checkBoxModel$']);
     mockNzModalService = jasmine.createSpyObj(['create']);
     await TestBed.configureTestingModule({
-      declarations: [TableComponent],
-      providers: [
+    providers: [
         { provide: CrmService, useValue: mockCrmService },
         { provide: NzModalService, useValue: mockNzModalService },
         {
-          provide: NZ_ICONS,
-          useValue: [SettingFill],
+            provide: NZ_ICONS,
+            useValue: [SettingFill],
         },
-      ],
-      imports: [NzTableModule, NzIconModule], // Ajouter NzTableModule ici
-    }).compileComponents();
+    ],
+    imports: [NzTableModule, NzIconModule, TableComponent]
+}).compileComponents();
 
     fixture = TestBed.createComponent(TableComponent);
     component = fixture.componentInstance;

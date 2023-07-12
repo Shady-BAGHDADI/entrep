@@ -29,8 +29,7 @@ const sharedComponents = [
   StrategieCommercialBannerComponent,
 ];
 @NgModule({
-  declarations: [...sharedComponents],
-  imports: [...sharedModules],
-  exports: [...sharedModules, ...sharedComponents],
+    imports: [...sharedModules, ...sharedComponents],
+    exports: [...sharedModules, ...sharedComponents]
 })
 export class SharedModule {}

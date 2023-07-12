@@ -12,16 +12,16 @@ import { SharedModule } from 'shared/shared.module';
 import { CrmService } from 'shared/services/crm.service';
 
 @NgModule({
-  declarations: [SearchFormComponent, PopupDisplayCheckboxListComponent],
-  imports: [
-    NgZerroModule,
-    SharedModule,
-    ReactiveFormsModule,
-    FormsModule,
-    BrowserAnimationsModule,
-    NoopAnimationsModule,
-  ],
-  exports: [SearchFormComponent, PopupDisplayCheckboxListComponent],
-  providers: [CrmService],
+    imports: [
+        NgZerroModule,
+        SharedModule,
+        ReactiveFormsModule,
+        FormsModule,
+        BrowserAnimationsModule,
+        NoopAnimationsModule,
+        SearchFormComponent, PopupDisplayCheckboxListComponent
+    ],
+    exports: [SearchFormComponent, PopupDisplayCheckboxListComponent],
+    providers: [CrmService]
 })
 export class ClientsProspectsModule {}

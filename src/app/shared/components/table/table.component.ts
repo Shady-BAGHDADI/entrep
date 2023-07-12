@@ -15,11 +15,22 @@ import { IResultSearch } from 'shared/models/resultsearch';
 import { SharedConstants } from 'shared/constants';
 import { Legend } from 'shared/models/legend';
 import { StrategieCommercialBannerComponent } from '../strategie-commercial-banner/strategie-commercial-banner.component';
+import { LegendBannerComponent } from '../legend-banner/legend-banner.component';
+import { LegendComponent } from '../legend/legend.component';
+import { NzTableModule } from 'ng-zorro-antd/table';
+import { NzPaginationModule } from 'ng-zorro-antd/pagination';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NgFor, NgIf, NgSwitch, NgSwitchCase, NgClass, NgSwitchDefault } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { NzSelectModule } from 'ng-zorro-antd/select';
 
 @Component({
-  selector: 'shared-table',
-  templateUrl: './table.component.html',
-  styleUrls: ['./table.component.scss'],
+    selector: 'shared-table',
+    templateUrl: './table.component.html',
+    styleUrls: ['./table.component.scss'],
+    standalone: true,
+    imports: [NzSelectModule, FormsModule, NgFor, NzIconModule, NzButtonModule, NzPaginationModule, NzTableModule, NgIf, NgSwitch, NgSwitchCase, NgClass, NgSwitchDefault, LegendComponent, LegendBannerComponent, StrategieCommercialBannerComponent]
 })
 export class TableComponent implements OnInit {
   headersForView: IHeader[] = [];

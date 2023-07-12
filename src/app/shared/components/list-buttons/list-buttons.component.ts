@@ -4,11 +4,16 @@ import { SharedConstants } from '../../constants';
 import { CrmService } from '../../services/crm.service';
 import { IButton } from '../../models/button';
 import { IHeader } from '../../models/header';
+import { NzWaveModule } from 'ng-zorro-antd/core/wave';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NgFor, NgClass } from '@angular/common';
 
 @Component({
-  selector: 'shared-list-buttons',
-  templateUrl: './list-buttons.component.html',
-  styleUrls: ['./list-buttons.component.scss'],
+    selector: 'shared-list-buttons',
+    templateUrl: './list-buttons.component.html',
+    styleUrls: ['./list-buttons.component.scss'],
+    standalone: true,
+    imports: [NgFor, NzButtonModule, NzWaveModule, NgClass]
 })
 export class ListButtonsComponent {
   buttons: IButton[] = [

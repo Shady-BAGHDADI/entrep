@@ -2,11 +2,16 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NzModalService } from 'ng-zorro-antd/modal';
 import { IHeader } from 'shared/models/header';
 import { CrmService } from 'shared/services/crm.service';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NgFor } from '@angular/common';
 
 @Component({
-  selector: 'app-popup-display-checkbox-list',
-  templateUrl: './popup-display-checkbox-list.component.html',
-  styleUrls: ['./popup-display-checkbox-list.component.scss'],
+    selector: 'app-popup-display-checkbox-list',
+    templateUrl: './popup-display-checkbox-list.component.html',
+    styleUrls: ['./popup-display-checkbox-list.component.scss'],
+    standalone: true,
+    imports: [NgFor, NzIconModule, NzButtonModule]
 })
 export class PopupDisplayCheckboxListComponent implements OnInit {
   listOfCheckBox: IHeader[] = [];

@@ -1,13 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NzSelectSizeType } from 'ng-zorro-antd/select';
 import { IResultSearch } from 'shared/models/resultsearch';
 import { CrmService } from 'shared/services/crm.service';
+import { NzWaveModule } from 'ng-zorro-antd/core/wave';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NgIf } from '@angular/common';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzCollapseModule } from 'ng-zorro-antd/collapse';
 
 @Component({
-  selector: 'app-search-form',
-  templateUrl: './search-form.component.html',
-  styleUrls: ['./search-form.component.scss'],
+    selector: 'app-search-form',
+    templateUrl: './search-form.component.html',
+    styleUrls: ['./search-form.component.scss'],
+    standalone: true,
+    imports: [NzCollapseModule, NzIconModule, NzButtonModule, FormsModule, ReactiveFormsModule, NgIf, NzInputModule, NzWaveModule]
 })
 export class SearchFormComponent implements OnInit {
   listOfOption: Array<{ label: string; value: string }> = [];

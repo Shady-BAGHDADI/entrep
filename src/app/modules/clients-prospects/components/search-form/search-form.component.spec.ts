@@ -17,17 +17,15 @@ describe('SearchFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [SearchFormComponent],
-      providers: [FormBuilder],
-      imports: [
+    providers: [FormBuilder],
+    imports: [
         NzCollapseModule,
         BrowserAnimationsModule,
         NoopAnimationsModule,
-      ],
-      schemas: [NO_ERRORS_SCHEMA],
-
-      //
-    }).compileComponents();
+        SearchFormComponent
+    ],
+    schemas: [NO_ERRORS_SCHEMA]
+}).compileComponents();
 
     fixture = TestBed.createComponent(SearchFormComponent);
     component = fixture.componentInstance;

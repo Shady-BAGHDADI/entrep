@@ -16,16 +16,16 @@ describe('ListButtonsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ListButtonsComponent],
-      providers: [CrmService],
-      imports: [
+    providers: [CrmService],
+    imports: [
         NzSelectModule,
         NzIconModule,
         HttpClientTestingModule,
         HttpClientModule,
         NzButtonModule,
-      ],
-    }).compileComponents();
+        ListButtonsComponent
+    ]
+}).compileComponents();
   });
 
   beforeEach(() => {

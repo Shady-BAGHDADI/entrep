@@ -8,8 +8,8 @@ describe('PopupDisplayCheckboxListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PopupDisplayCheckboxListComponent ]
-    })
+    imports: [PopupDisplayCheckboxListComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(PopupDisplayCheckboxListComponent);
